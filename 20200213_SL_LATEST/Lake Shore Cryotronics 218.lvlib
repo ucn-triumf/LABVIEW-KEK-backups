@@ -12,7 +12,7 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
 		<Item Name="Action-Status" Type="Folder">
 			<Item Name="Action-Status.mnu" Type="Document" URL="/&lt;instrlib&gt;/Lake Shore Cryotronics 218/Public/Action-Status/Action-Status.mnu"/>
-			<Item Name="Action Log Data.vi" Type="VI" URL="../Action Log Data.vi"/>
+			<Item Name="Action Log Data.vi" Type="VI" URL="../istr.lib/Action Log Data.vi"/>
 			<Item Name="Action Reset Alarms.vi" Type="VI" URL="../Action Reset Alarms.vi"/>
 			<Item Name="Action Reset Min-Max.vi" Type="VI" URL="../Action Reset Min-Max.vi"/>
 			<Item Name="Status Alarm Condition.vi" Type="VI" URL="../Status Alarm Condition.vi"/>
