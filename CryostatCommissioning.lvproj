@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="17008000">
 	<Item Name="My Computer" Type="My Computer">
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -670,6 +671,8 @@
 			</Item>
 		</Item>
 		<Item Name="CRYO_LeakTest.vi" Type="VI" URL="../CRYO_LeakTest.vi"/>
+		<Item Name="CRYO_LeakTest2.vi" Type="VI" URL="../CRYO_LeakTest2.vi"/>
+		<Item Name="CRYO_LeakTestDummy.vi" Type="VI" URL="../CRYO_LeakTestDummy.vi"/>
 		<Item Name="LVData.lvclass" Type="LVClass" URL="../LVData.lvclass"/>
 		<Item Name="USBData.lvclass" Type="LVClass" URL="../USBData.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
