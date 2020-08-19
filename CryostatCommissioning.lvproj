@@ -33,20 +33,6 @@
 			<Item Name="FileWriteTest.vi" Type="VI" URL="../examples/FileWriteTest.vi"/>
 		</Item>
 		<Item Name="istr.lib" Type="Folder">
-			<Item Name="ADCMT 6240" Type="Folder">
-				<Item Name="Examples" Type="Folder"/>
-				<Item Name="Private" Type="Folder"/>
-				<Item Name="Public" Type="Folder">
-					<Item Name="Action-Status" Type="Folder">
-						<Item Name="Low Level" Type="Folder"/>
-					</Item>
-					<Item Name="Configure" Type="Folder"/>
-					<Item Name="Data" Type="Folder">
-						<Item Name="Low Level" Type="Folder"/>
-					</Item>
-					<Item Name="Utility" Type="Folder"/>
-				</Item>
-			</Item>
 			<Item Name="Lake Shore 336" Type="Folder">
 				<Item Name="Examples" Type="Folder"/>
 				<Item Name="Private" Type="Folder"/>
@@ -78,6 +64,46 @@
 				<Item Name="Lake Shore Cryotronics 218.lvlib" Type="Library" URL="../istr.lib/Lake Shore Cryotronics 218/Lake Shore Cryotronics 218.lvlib"/>
 				<Item Name="Lake Shore Cryotronics 218.lvlps" Type="Document" URL="../istr.lib/Lake Shore Cryotronics 218/Lake Shore Cryotronics 218.lvlps"/>
 				<Item Name="Lake Shore Cryotronics 218.lvproj" Type="Document" URL="../istr.lib/Lake Shore Cryotronics 218/Lake Shore Cryotronics 218.lvproj"/>
+			</Item>
+			<Item Name="ADCMT 6240" Type="Folder">
+				<Item Name="Examples" Type="Folder">
+					<Item Name="ADCMT 6240 Fixed Sweep and Acquire Measurements.vi" Type="VI" URL="../istr.lib/ADCMT 6240/Examples/ADCMT 6240 Fixed Sweep and Acquire Measurements.vi"/>
+					<Item Name="ADCMT 6240 Linear Sweep and Acquire Measurements.vi" Type="VI" URL="../istr.lib/ADCMT 6240/Examples/ADCMT 6240 Linear Sweep and Acquire Measurements.vi"/>
+					<Item Name="ADCMT 6240 Random Sweep and Acquire Measurements.vi" Type="VI" URL="../istr.lib/ADCMT 6240/Examples/ADCMT 6240 Random Sweep and Acquire Measurements.vi"/>
+					<Item Name="ADCMT 6240 Read Max Min.vi" Type="VI" URL="../istr.lib/ADCMT 6240/Examples/ADCMT 6240 Read Max Min.vi"/>
+					<Item Name="ADCMT 6240 Read Multiple (Pulse-RM).vi" Type="VI" URL="../istr.lib/ADCMT 6240/Examples/ADCMT 6240 Read Multiple (Pulse-RM).vi"/>
+					<Item Name="ADCMT 6240 Read Multiple.vi" Type="VI" URL="../istr.lib/ADCMT 6240/Examples/ADCMT 6240 Read Multiple.vi"/>
+					<Item Name="ADCMT 6240 Read Single.vi" Type="VI" URL="../istr.lib/ADCMT 6240/Examples/ADCMT 6240 Read Single.vi"/>
+					<Item Name="ADCMT 6240 Read Triggered Multiple.vi" Type="VI" URL="../istr.lib/ADCMT 6240/Examples/ADCMT 6240 Read Triggered Multiple.vi"/>
+					<Item Name="ADCMT 6240 Two Slope Sweep and Acquire Measurements.vi" Type="VI" URL="../istr.lib/ADCMT 6240/Examples/ADCMT 6240 Two Slope Sweep and Acquire Measurements.vi"/>
+					<Item Name="ADCMT 6240.bin3" Type="Document" URL="../istr.lib/ADCMT 6240/Examples/ADCMT 6240.bin3"/>
+				</Item>
+				<Item Name="Private" Type="Folder"/>
+				<Item Name="Public" Type="Folder">
+					<Item Name="Action-Status" Type="Folder">
+						<Item Name="Low Level" Type="Folder">
+							<Item Name="Action-Status_Low Level.mnu" Type="Document" URL="../istr.lib/ADCMT 6240/Public/Action-Status/Low Level/Action-Status_Low Level.mnu"/>
+						</Item>
+						<Item Name="Action-Status.mnu" Type="Document" URL="../istr.lib/ADCMT 6240/Public/Action-Status/Action-Status.mnu"/>
+					</Item>
+					<Item Name="Configure" Type="Folder">
+						<Item Name="Configure.mnu" Type="Document" URL="../istr.lib/ADCMT 6240/Public/Configure/Configure.mnu"/>
+					</Item>
+					<Item Name="Data" Type="Folder">
+						<Item Name="Low Level" Type="Folder">
+							<Item Name="Data_Low Level.mnu" Type="Document" URL="../istr.lib/ADCMT 6240/Public/Data/Low Level/Data_Low Level.mnu"/>
+						</Item>
+						<Item Name="Data.mnu" Type="Document" URL="../istr.lib/ADCMT 6240/Public/Data/Data.mnu"/>
+					</Item>
+					<Item Name="Utility" Type="Folder">
+						<Item Name="Utility.mnu" Type="Document" URL="../istr.lib/ADCMT 6240/Public/Utility/Utility.mnu"/>
+					</Item>
+				</Item>
+				<Item Name="ADCMT 6240 Readme.html" Type="Document" URL="../istr.lib/ADCMT 6240/ADCMT 6240 Readme.html"/>
+				<Item Name="ADCMT 6240.aliases" Type="Document" URL="../istr.lib/ADCMT 6240/ADCMT 6240.aliases"/>
+				<Item Name="ADCMT 6240.lvlib" Type="Library" URL="../istr.lib/ADCMT 6240/ADCMT 6240.lvlib"/>
+				<Item Name="ADCMT 6240.lvlps" Type="Document" URL="../istr.lib/ADCMT 6240/ADCMT 6240.lvlps"/>
+				<Item Name="ADCMT 6240.lvproj" Type="Document" URL="../istr.lib/ADCMT 6240/ADCMT 6240.lvproj"/>
 			</Item>
 		</Item>
 		<Item Name="DAQmx" Type="Folder">
@@ -721,6 +747,7 @@
 		<Item Name="LVData.lvclass" Type="LVClass" URL="../LVData.lvclass"/>
 		<Item Name="USBData.lvclass" Type="LVClass" URL="../USBData.lvclass"/>
 		<Item Name="LSI218Data.lvclass" Type="LVClass" URL="../LSI218Data.lvclass"/>
+		<Item Name="CRYO_VavleControlProto.vi" Type="VI" URL="../CRYO_VavleControlProto.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
@@ -775,18 +802,16 @@
 				<Item Name="DTbl Digital Size.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital Size.vi"/>
 				<Item Name="DWDT Uncompress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Uncompress Digital.vi"/>
 				<Item Name="DTbl Uncompress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Uncompress Digital.vi"/>
+				<Item Name="DAQmx Start Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Start Task.vi"/>
+				<Item Name="DAQmx Stop Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Stop Task.vi"/>
+				<Item Name="DAQmx Clear Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Clear Task.vi"/>
+				<Item Name="DAQmx Create Channel (AI-Voltage-Basic).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Voltage-Basic).vi"/>
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 			</Item>
-			<Item Name="DAQmx Create Task.vi" Type="VI" URL="../vi.lib/DAQmx/create/task.llb/DAQmx Create Task.vi"/>
-			<Item Name="DAQmx Fill In Error Info.vi" Type="VI" URL="../vi.lib/DAQmx/miscellaneous.llb/DAQmx Fill In Error Info.vi"/>
-			<Item Name="DAQmx Read (Analog 2D DBL NChan NSamp).vi" Type="VI" URL="../vi.lib/DAQmx/read.llb/DAQmx Read (Analog 2D DBL NChan NSamp).vi"/>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="DAQmx Start Task.vi" Type="VI" URL="../vi.lib/DAQmx/configure/task.llb/DAQmx Start Task.vi"/>
-			<Item Name="DAQmx Clear Task.vi" Type="VI" URL="../vi.lib/DAQmx/configure/task.llb/DAQmx Clear Task.vi"/>
-			<Item Name="DAQmx Stop Task.vi" Type="VI" URL="../vi.lib/DAQmx/configure/task.llb/DAQmx Stop Task.vi"/>
-			<Item Name="DAQmx Create Channel (AI-Voltage-Basic).vi" Type="VI" URL="../vi.lib/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Voltage-Basic).vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
