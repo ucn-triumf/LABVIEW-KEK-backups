@@ -235,7 +235,6 @@
 						<Item Name="DAQmx Setup 4304 Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 4304 Calibration.vi"/>
 						<Item Name="DAQmx Setup 4305 Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 4305 Calibration.vi"/>
 						<Item Name="DAQmx Setup 4322 Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 4322 Calibration.vi"/>
-						<Item Name="DAQmx Setup 4339 Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 4339 Calibration.vi"/>
 						<Item Name="DAQmx Setup 4463 Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 4463 Calibration.vi"/>
 						<Item Name="DAQmx Setup 4480 Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 4480 Calibration.vi"/>
 						<Item Name="DAQmx Setup 9218 Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 9218 Calibration.vi"/>
@@ -301,7 +300,6 @@
 						<Item Name="Switch" Type="Folder">
 							<Item Name="DAQmx Switch Channel Property Node.vi" Type="VI" URL="../vi.lib/DAQmx/configure/hardwareSpecific/Switch.llb/DAQmx Switch Channel Property Node.vi"/>
 							<Item Name="DAQmx Switch Close Relays.vi" Type="VI" URL="../vi.lib/DAQmx/configure/hardwareSpecific/Switch.llb/DAQmx Switch Close Relays.vi"/>
-							<Item Name="DAQmx Switch Connect (Multiple).vi" Type="VI" URL="../vi.lib/DAQmx/configure/hardwareSpecific/Switch.llb/DAQmx Switch Connect (Multiple).vi"/>
 							<Item Name="DAQmx Switch Connect (Single).vi" Type="VI" URL="../vi.lib/DAQmx/configure/hardwareSpecific/Switch.llb/DAQmx Switch Connect (Single).vi"/>
 							<Item Name="DAQmx Switch Connect.vi" Type="VI" URL="../vi.lib/DAQmx/configure/hardwareSpecific/Switch.llb/DAQmx Switch Connect.vi"/>
 							<Item Name="DAQmx Switch Create Scan List.vi" Type="VI" URL="../vi.lib/DAQmx/configure/hardwareSpecific/Switch.llb/DAQmx Switch Create Scan List.vi"/>
@@ -719,12 +717,6 @@
 				<Item Name="Lake Shore Cryotronics 218.lvproj" Type="Document" URL="../istr.lib/Lake Shore Cryotronics 218/Lake Shore Cryotronics 218.lvproj"/>
 			</Item>
 		</Item>
-		<Item Name="Public" Type="Folder">
-			<Item Name="Action-Status" Type="Folder"/>
-			<Item Name="Configuration" Type="Folder"/>
-			<Item Name="Data" Type="Folder"/>
-			<Item Name="Utility" Type="Folder"/>
-		</Item>
 		<Item Name="CRYO_LeakTest2.vi" Type="VI" URL="../CRYO_LeakTest2.vi"/>
 		<Item Name="CRYO_LeakTestDummy.vi" Type="VI" URL="../CRYO_LeakTestDummy.vi"/>
 		<Item Name="LVData.lvclass" Type="LVClass" URL="../LVData.lvclass"/>
@@ -734,12 +726,6 @@
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Boolean Array to Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDT.llb/Boolean Array to Digital.vi"/>
 				<Item Name="Convert 1DDbl to DDT 2.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/Convert 1DDbl to DDT 2.vi"/>
-				<Item Name="DAQmx Advance Trigger (Digital Edge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Advance Trigger (Digital Edge).vi"/>
-				<Item Name="DAQmx Advance Trigger (None).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Advance Trigger (None).vi"/>
-				<Item Name="DAQmx Configure Logging (TDMS).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Configure Logging (TDMS).vi"/>
-				<Item Name="DAQmx Configure Watchdog Expiration States (Analog Output).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Configure Watchdog Expiration States (Analog Output).vi"/>
-				<Item Name="DAQmx Configure Watchdog Expiration States (Counter Output).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Configure Watchdog Expiration States (Counter Output).vi"/>
-				<Item Name="DAQmx Configure Watchdog Expiration States (Digital Output).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Configure Watchdog Expiration States (Digital Output).vi"/>
 				<Item Name="DAQmx Create Channel (AI-Acceleration-4 Wire DC Voltage).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Acceleration-4 Wire DC Voltage).vi"/>
 				<Item Name="DAQmx Create Channel (AI-Acceleration-Accelerometer).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Acceleration-Accelerometer).vi"/>
 				<Item Name="DAQmx Create Channel (AI-Acceleration-Charge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Acceleration-Charge).vi"/>
@@ -825,11 +811,6 @@
 				<Item Name="DAQmx Create Timing Source (Frequency).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/timing.llb/DAQmx Create Timing Source (Frequency).vi"/>
 				<Item Name="DAQmx Create Timing Source (Signal From Task).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/timing.llb/DAQmx Create Timing Source (Signal From Task).vi"/>
 				<Item Name="DAQmx Fill In Error Info.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/DAQmx Fill In Error Info.vi"/>
-				<Item Name="DAQmx Get Power Up States (Analog With Output Type).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/system.llb/DAQmx Get Power Up States (Analog With Output Type).vi"/>
-				<Item Name="DAQmx Get Power Up States (Analog).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/system.llb/DAQmx Get Power Up States (Analog).vi"/>
-				<Item Name="DAQmx Get Power Up States (Digital Logic Family).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/system.llb/DAQmx Get Power Up States (Digital Logic Family).vi"/>
-				<Item Name="DAQmx Get Power Up States (Digital Pull Up Pull Down).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/system.llb/DAQmx Get Power Up States (Digital Pull Up Pull Down).vi"/>
-				<Item Name="DAQmx Get Power Up States (Digital).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/system.llb/DAQmx Get Power Up States (Digital).vi"/>
 				<Item Name="DAQmx Read (Analog 1D DBL 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Analog 1D DBL 1Chan NSamp).vi"/>
 				<Item Name="DAQmx Read (Analog 1D DBL NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Analog 1D DBL NChan 1Samp).vi"/>
 				<Item Name="DAQmx Read (Analog 1D Wfm NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Analog 1D Wfm NChan 1Samp).vi"/>
@@ -886,47 +867,8 @@
 				<Item Name="DAQmx Read (Raw 1D U8).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Raw 1D U8).vi"/>
 				<Item Name="DAQmx Read (Raw 1D U16).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Raw 1D U16).vi"/>
 				<Item Name="DAQmx Read (Raw 1D U32).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Raw 1D U32).vi"/>
-				<Item Name="DAQmx Reference Trigger (Analog Edge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Reference Trigger (Analog Edge).vi"/>
-				<Item Name="DAQmx Reference Trigger (Analog Multi Edge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Reference Trigger (Analog Multi Edge).vi"/>
-				<Item Name="DAQmx Reference Trigger (Analog Window).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Reference Trigger (Analog Window).vi"/>
-				<Item Name="DAQmx Reference Trigger (Digital Edge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Reference Trigger (Digital Edge).vi"/>
-				<Item Name="DAQmx Reference Trigger (Digital Pattern).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Reference Trigger (Digital Pattern).vi"/>
-				<Item Name="DAQmx Reference Trigger (None).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Reference Trigger (None).vi"/>
-				<Item Name="DAQmx Set Power Up States (Analog With Output Type).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/system.llb/DAQmx Set Power Up States (Analog With Output Type).vi"/>
-				<Item Name="DAQmx Set Power Up States (Digital Logic Family).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/system.llb/DAQmx Set Power Up States (Digital Logic Family).vi"/>
-				<Item Name="DAQmx Set Power Up States (Digital Pull Up Pull Down).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/system.llb/DAQmx Set Power Up States (Digital Pull Up Pull Down).vi"/>
-				<Item Name="DAQmx Set Power Up States (Digital).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/system.llb/DAQmx Set Power Up States (Digital).vi"/>
-				<Item Name="DAQmx Setup 4303 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 4303 Calibration.vi"/>
-				<Item Name="DAQmx Setup 4304 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 4304 Calibration.vi"/>
-				<Item Name="DAQmx Setup 4305 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 4305 Calibration.vi"/>
-				<Item Name="DAQmx Setup 4322 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 4322 Calibration.vi"/>
-				<Item Name="DAQmx Setup 4339 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 4339 Calibration.vi"/>
-				<Item Name="DAQmx Setup 4463 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 4463 Calibration.vi"/>
-				<Item Name="DAQmx Setup 4480 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 4480 Calibration.vi"/>
-				<Item Name="DAQmx Setup 11605 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 11605 Calibration.vi"/>
-				<Item Name="DAQmx Setup 11634 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 11634 Calibration.vi"/>
-				<Item Name="DAQmx Setup 11637 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 11637 Calibration.vi"/>
-				<Item Name="DAQmx Setup DSA AO Timebase Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup DSA AO Timebase Calibration.vi"/>
-				<Item Name="DAQmx Start Trigger (Analog Edge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Start Trigger (Analog Edge).vi"/>
-				<Item Name="DAQmx Start Trigger (Analog Multi Edge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Start Trigger (Analog Multi Edge).vi"/>
-				<Item Name="DAQmx Start Trigger (Analog Window).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Start Trigger (Analog Window).vi"/>
-				<Item Name="DAQmx Start Trigger (Digital Edge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Start Trigger (Digital Edge).vi"/>
-				<Item Name="DAQmx Start Trigger (Digital Pattern).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Start Trigger (Digital Pattern).vi"/>
 				<Item Name="DAQmx Start Trigger (None).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Start Trigger (None).vi"/>
 				<Item Name="DAQmx Start Trigger (Time).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Start Trigger (Time).vi"/>
-				<Item Name="DAQmx Switch Connect (Multiple).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/hardwareSpecific/Switch.llb/DAQmx Switch Connect (Multiple).vi"/>
-				<Item Name="DAQmx Switch Connect (Single).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/hardwareSpecific/Switch.llb/DAQmx Switch Connect (Single).vi"/>
-				<Item Name="DAQmx Switch Disconnect (Multiple).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/hardwareSpecific/Switch.llb/DAQmx Switch Disconnect (Multiple).vi"/>
-				<Item Name="DAQmx Switch Disconnect (Single).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/hardwareSpecific/Switch.llb/DAQmx Switch Disconnect (Single).vi"/>
-				<Item Name="DAQmx Switch Get Relay Count (Single).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/hardwareSpecific/Switch.llb/DAQmx Switch Get Relay Count (Single).vi"/>
-				<Item Name="DAQmx Switch Get Relay Position (Multiple).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/hardwareSpecific/Switch.llb/DAQmx Switch Get Relay Position (Multiple).vi"/>
-				<Item Name="DAQmx Switch Get Relay Position (Single).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/hardwareSpecific/Switch.llb/DAQmx Switch Get Relay Position (Single).vi"/>
-				<Item Name="DAQmx Timing (Burst Import Clock).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Burst Import Clock).vi"/>
-				<Item Name="DAQmx Timing (Change Detection).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Change Detection).vi"/>
-				<Item Name="DAQmx Timing (Handshaking).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Handshaking).vi"/>
-				<Item Name="DAQmx Timing (Implicit).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Implicit).vi"/>
-				<Item Name="DAQmx Timing (Pipelined Sample Clock).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Pipelined Sample Clock).vi"/>
-				<Item Name="DAQmx Timing (Use Waveform).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Use Waveform).vi"/>
 				<Item Name="DAQmx Write (Analog 1D DBL 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog 1D DBL 1Chan NSamp).vi"/>
 				<Item Name="DAQmx Write (Analog 1D DBL NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog 1D DBL NChan 1Samp).vi"/>
 				<Item Name="DAQmx Write (Analog 1D Wfm NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog 1D Wfm NChan 1Samp).vi"/>
@@ -1026,6 +968,8 @@
 				<Item Name="DAQmx Adjust 9215 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9215 Calibration.vi"/>
 				<Item Name="DAQmx Adjust DSA AO Timebase Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust DSA AO Timebase Calibration.vi"/>
 				<Item Name="DAQmx Adjust SCXI 1521 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 1521 Calibration.vi"/>
+				<Item Name="DAQmx Setup 4339 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 4339 Calibration.vi"/>
+				<Item Name="DAQmx Switch Connect (Multiple).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/hardwareSpecific/Switch.llb/DAQmx Switch Connect (Multiple).vi"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
