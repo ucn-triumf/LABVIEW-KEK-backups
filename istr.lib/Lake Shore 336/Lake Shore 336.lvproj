@@ -1,192 +1,57 @@
-<?xml version='1.0'?>
-<Project Name="Template - Generic.lvproj" Type="Project" LVVersion="8208000" URL="/&lt;instrlib&gt;/_Template - Generic/Template - Generic.lvproj">
-   <Property Name="CCSymbols" Type="Str"></Property>
-   <Property Name="Instrument Driver" Type="Str">True</Property>
-   <Property Name="NI.Project.Description" Type="Str">This project is used by developers to edit API and example files for LabVIEW Plug and Play instrument drivers.</Property>
-   <Item Name="My Computer" Type="My Computer">
-      <Property Name="CCSymbols" Type="Str">OS,Win;CPU,x86;</Property>
-      <Property Name="specify.custom.address" Type="Bool">false</Property>
-      <Item Name="Examples" Type="Folder">
-         <Item Name="Lake Shore 336 Configure Heater Output Control Parameters and Acquire Single Reading.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Examples/Lake Shore 336 Configure Heater Output Control Parameters and Acquire Single Reading.vi"/>
-         <Item Name="Lake Shore 336 Acquire Multiple Readings.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Examples/Lake Shore 336 Acquire Multiple Readings.vi"/>
-         <Item Name="Lake Shore 336 Write Curve.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Examples/Lake Shore 336 Write Curve.vi"/>
-         <Item Name="Lake Shore 336.bin3" Type="Document" URL="/&lt;instrlib&gt;/Lake Shore 336/Examples/Lake Shore 336.bin3"/>
-      </Item>
-      <Item Name="Lake Shore 336.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Lake Shore 336/Lake Shore 336.lvlib">
-         <Item Name="Public" Type="Folder">
-            <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-            <Item Name="Action-Status" Type="Folder">
-               <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               <Item Name="Erase Curve.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Action-Status/Erase Curve.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Reset Alarm.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Action-Status/Reset Alarm.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Reset Min and Max.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Action-Status/Reset Min and Max.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Initiate Autotune.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Action-Status/Initiate Autotune.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Alarm Status.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Action-Status/Alarm Status.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Output Range and Manual Status.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Action-Status/Output Range and Manual Status.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="PID Status.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Action-Status/PID Status.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Ramp Status.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Action-Status/Ramp Status.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Heater Status.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Action-Status/Heater Status.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Instrument Status.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Action-Status/Instrument Status.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Setpoint Status.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Action-Status/Setpoint Status.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Autotune Status.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Action-Status/Autotune Status.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Relay Status.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Action-Status/Relay Status.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Action-Status.mnu" Type="Document" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Action-Status/Action-Status.mnu">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-            </Item>
-            <Item Name="Configure" Type="Folder">
-               <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               <Item Name="Configure Alarm.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Configure/Configure Alarm.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Configure Input Parameters.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Configure/Configure Input Parameters.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Configure Input Filter.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Configure/Configure Input Filter.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Configure Heater Output.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Configure/Configure Heater Output.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Configure Unpowered Analog Output.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Configure/Configure Unpowered Analog Output.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Configure Warm Up Supply.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Configure/Configure Warm Up Supply.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Configure Curve Header.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Configure/Configure Curve Header.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Configure Curve Point.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Configure/Configure Curve Point.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Configure PID.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Configure/Configure PID.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Configure Output Range and Manual Value.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Configure/Configure Output Range and Manual Value.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Configure Setpoint and Ramp.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Configure/Configure Setpoint and Ramp.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Configure Display.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Configure/Configure Display.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Configure Instrument.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Configure/Configure Instrument.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Configure Relay.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Configure/Configure Relay.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Configure Softcal.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Configure/Configure Softcal.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Configure Zone.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Configure/Configure Zone.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Configure.mnu" Type="Document" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Configure/Configure.mnu">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-            </Item>
-            <Item Name="Data" Type="Folder">
-               <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               <Item Name="Sensor Data.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Data/Sensor Data.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Sensor Data (Single Reading).vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Data/Sensor Data (Single Reading).vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Sensor Data (Multiple Readings).vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Data/Sensor Data (Multiple Readings).vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Min and Max Data.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Data/Min and Max Data.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Heater Output Data.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Data/Heater Output Data.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Unpowered Analog Output Data.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Data/Unpowered Analog Output Data.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Thermocouple Junction Temperature Data.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Data/Thermocouple Junction Temperature Data.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Data.mnu" Type="Document" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Data/Data.mnu">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-            </Item>
-            <Item Name="Utility" Type="Folder">
-               <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               <Item Name="Utility.mnu" Type="Document" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Utility/Utility.mnu">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Device Clear.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Utility/Device Clear.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Error Query.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Utility/Error Query.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Reset.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Utility/Reset.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Revision Query.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Utility/Revision Query.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-               <Item Name="Self-Test.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Utility/Self-Test.vi">
-                  <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-               </Item>
-            </Item>
-            <Item Name="dir.mnu" Type="Document" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/dir.mnu">
-               <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-            </Item>
-            <Item Name="Close.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Close.vi">
-               <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-            </Item>
-            <Item Name="Initialize.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/Initialize.vi">
-               <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-            </Item>
-            <Item Name="VI Tree.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Public/VI Tree.vi">
-               <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-            </Item>
-         </Item>
-         <Item Name="Private" Type="Folder">
-            <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-            <Item Name="Default Instrument Setup.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Private/Default Instrument Setup.vi">
-               <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-            </Item>
-            <Item Name="Decode Error.vi" Type="VI" URL="/&lt;instrlib&gt;/Lake Shore 336/Private/Decode Error.vi">
-               <Property Name="NI.Lib.ShowInTree" Type="Bool">true</Property>
-            </Item>
-         </Item>
-      </Item>
-      <Item Name="Lake Shore Cryotronics 336 Readme.html" Type="Document" URL="/&lt;instrlib&gt;/Lake Shore 336/Lake Shore Cryotronics 336 Readme.html"/>
-      <Item Name="Dependencies" Type="Dependencies"/>
-      <Item Name="Build Specifications" Type="Build"/>
-   </Item>
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<Project Name="Template - Generic.lvproj" Type="Project" LVVersion="17008000" URL="/&lt;instrlib&gt;/_Template - Generic/Template - Generic.lvproj">
+	<Property Name="CCSymbols" Type="Str"></Property>
+	<Property Name="Instrument Driver" Type="Str">True</Property>
+	<Property Name="NI.Project.Description" Type="Str">This project is used by developers to edit API and example files for LabVIEW Plug and Play instrument drivers.</Property>
+	<Item Name="My Computer" Type="My Computer">
+		<Property Name="CCSymbols" Type="Str">OS,Win;CPU,x86;</Property>
+		<Property Name="NI.SortType" Type="Int">3</Property>
+		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Examples" Type="Folder">
+			<Item Name="Lake Shore 336 Configure Heater Output Control Parameters and Acquire Single Reading.vi" Type="VI" URL="../Examples/Lake Shore 336 Configure Heater Output Control Parameters and Acquire Single Reading.vi"/>
+			<Item Name="Lake Shore 336 Acquire Multiple Readings.vi" Type="VI" URL="../Examples/Lake Shore 336 Acquire Multiple Readings.vi"/>
+			<Item Name="Lake Shore 336 Write Curve.vi" Type="VI" URL="../Examples/Lake Shore 336 Write Curve.vi"/>
+			<Item Name="Lake Shore 336.bin3" Type="Document" URL="../Examples/Lake Shore 336.bin3"/>
+		</Item>
+		<Item Name="Lake Shore 336.lvlib" Type="Library" URL="../Lake Shore 336.lvlib"/>
+		<Item Name="Lake Shore Cryotronics 336 Readme.html" Type="Document" URL="../Lake Shore Cryotronics 336 Readme.html"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="vi.lib" Type="Folder">
+				<Item Name="subTimeDelay.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/TimeDelayBlock.llb/subTimeDelay.vi"/>
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
+				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
+				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
+				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
+				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
+				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
+				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
+				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
+				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
+				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
+				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
+				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
+				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
+				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
+				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
+				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
+				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
+				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
+				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
+				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
+				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
+				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
+				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
+				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
+				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
+				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
+			</Item>
+		</Item>
+		<Item Name="Build Specifications" Type="Build"/>
+	</Item>
 </Project>

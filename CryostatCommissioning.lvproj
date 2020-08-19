@@ -16,6 +16,8 @@
 			<Item Name="MultiGraph.ctl" Type="VI" URL="../ctl/MultiGraph.ctl"/>
 			<Item Name="USBDataSetting.ctl" Type="VI" URL="../ctl/USBDataSetting.ctl"/>
 			<Item Name="USBDataSetting_Series.ctl" Type="VI" URL="../ctl/USBDataSetting_Series.ctl"/>
+			<Item Name="LSIDataSetting.ctl" Type="VI" URL="../ctl/LSIDataSetting.ctl"/>
+			<Item Name="LVDataSetting.ctl" Type="VI" URL="../ctl/LVDataSetting.ctl"/>
 		</Item>
 		<Item Name="custom" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
@@ -23,6 +25,8 @@
 			<Item Name="LV_UNIX.vi" Type="VI" URL="../custom/LV_UNIX.vi"/>
 			<Item Name="LV_UNIXTIME.vi" Type="VI" URL="../custom/LV_UNIXTIME.vi"/>
 			<Item Name="FileWrite.vi" Type="VI" URL="../custom/FileWrite.vi"/>
+			<Item Name="Basic Serial Write and Read modified.vi" Type="VI" URL="../custom/Basic Serial Write and Read modified.vi"/>
+			<Item Name="ReadSpreadsheet.vi" Type="VI" URL="../custom/ReadSpreadsheet.vi"/>
 		</Item>
 		<Item Name="examples" Type="Folder">
 			<Item Name="Demo.vi" Type="VI" URL="../examples/Demo.vi"/>
@@ -66,7 +70,6 @@
 						<Item Name="DAQmx Adjust 9212 Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9212 Calibration.vi"/>
 						<Item Name="DAQmx Adjust 9213 Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9213 Calibration.vi"/>
 						<Item Name="DAQmx Adjust 9214 Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9214 Calibration.vi"/>
-						<Item Name="DAQmx Adjust 9215 Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9215 Calibration.vi"/>
 						<Item Name="DAQmx Adjust 9216 Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9216 Calibration.vi"/>
 						<Item Name="DAQmx Adjust 9217 Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9217 Calibration.vi"/>
 						<Item Name="DAQmx Adjust 9218 Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9218 Calibration.vi"/>
@@ -116,7 +119,6 @@
 						<Item Name="DAQmx Adjust DSA AI Calibration With Gain and Coupling.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust DSA AI Calibration With Gain and Coupling.vi"/>
 						<Item Name="DAQmx Adjust DSA AI Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust DSA AI Calibration.vi"/>
 						<Item Name="DAQmx Adjust DSA AO Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust DSA AO Calibration.vi"/>
-						<Item Name="DAQmx Adjust DSA AO Timebase Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust DSA AO Timebase Calibration.vi"/>
 						<Item Name="DAQmx Adjust DSA Calibration Polymorphic.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust DSA Calibration Polymorphic.vi"/>
 						<Item Name="DAQmx Adjust DSA Power Amplifier Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust DSA Power Amplifier Calibration.vi"/>
 						<Item Name="DAQmx Adjust DSA Timebase Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust DSA Timebase Calibration.vi"/>
@@ -141,7 +143,6 @@
 						<Item Name="DAQmx Adjust SCXI 1503 Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 1503 Calibration.vi"/>
 						<Item Name="DAQmx Adjust SCXI 1503 Current Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 1503 Current Calibration.vi"/>
 						<Item Name="DAQmx Adjust SCXI 1520 Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 1520 Calibration.vi"/>
-						<Item Name="DAQmx Adjust SCXI 1521 Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 1521 Calibration.vi"/>
 						<Item Name="DAQmx Adjust SCXI 1540 Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 1540 Calibration.vi"/>
 						<Item Name="DAQmx Adjust SCXI Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI Calibration.vi"/>
 						<Item Name="DAQmx Adjust TIO Timebase Calibration.vi" Type="VI" URL="../vi.lib/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust TIO Timebase Calibration.vi"/>
@@ -670,112 +671,69 @@
 				</Item>
 			</Item>
 		</Item>
-		<Item Name="CRYO_LeakTest.vi" Type="VI" URL="../CRYO_LeakTest.vi"/>
+		<Item Name="istr.lib" Type="Folder">
+			<Item Name="ADCMT 6240" Type="Folder">
+				<Item Name="Examples" Type="Folder"/>
+				<Item Name="Private" Type="Folder"/>
+				<Item Name="Public" Type="Folder">
+					<Item Name="Action-Status" Type="Folder">
+						<Item Name="Low Level" Type="Folder"/>
+					</Item>
+					<Item Name="Configure" Type="Folder"/>
+					<Item Name="Data" Type="Folder">
+						<Item Name="Low Level" Type="Folder"/>
+					</Item>
+					<Item Name="Utility" Type="Folder"/>
+				</Item>
+			</Item>
+			<Item Name="Lake Shore 336" Type="Folder">
+				<Item Name="Examples" Type="Folder"/>
+				<Item Name="Private" Type="Folder"/>
+				<Item Name="Public" Type="Folder">
+					<Item Name="Action-Status" Type="Folder"/>
+					<Item Name="Configure" Type="Folder"/>
+					<Item Name="Data" Type="Folder"/>
+					<Item Name="Utility" Type="Folder"/>
+				</Item>
+			</Item>
+			<Item Name="Lake Shore Cryotronics 218" Type="Folder">
+				<Item Name="Examples" Type="Folder">
+					<Item Name="Lake Shore Cryotronics 218 Alarm Configuration.vi" Type="VI" URL="../istr.lib/Lake Shore Cryotronics 218/Examples/Lake Shore Cryotronics 218 Alarm Configuration.vi"/>
+					<Item Name="Lake Shore Cryotronics 218 Sensor Reading.vi" Type="VI" URL="../istr.lib/Lake Shore Cryotronics 218/Examples/Lake Shore Cryotronics 218 Sensor Reading.vi"/>
+					<Item Name="Lake Shore Cryotronics 218.bin3" Type="Document" URL="../istr.lib/Lake Shore Cryotronics 218/Examples/Lake Shore Cryotronics 218.bin3"/>
+				</Item>
+				<Item Name="Public" Type="Folder">
+					<Item Name="Action-Status" Type="Folder">
+						<Item Name="Action-Status.mnu" Type="Document" URL="../istr.lib/Lake Shore Cryotronics 218/Public/Action-Status/Action-Status.mnu"/>
+					</Item>
+					<Item Name="Configuration" Type="Folder">
+						<Item Name="Configuration.mnu" Type="Document" URL="../istr.lib/Lake Shore Cryotronics 218/Public/Configuration/Configuration.mnu"/>
+					</Item>
+					<Item Name="Data" Type="Folder"/>
+					<Item Name="Utility" Type="Folder"/>
+				</Item>
+				<Item Name="Lake Shore Cryotronics 218 Readme.html" Type="Document" URL="../istr.lib/Lake Shore Cryotronics 218/Lake Shore Cryotronics 218 Readme.html"/>
+				<Item Name="Lake Shore Cryotronics 218.aliases" Type="Document" URL="../istr.lib/Lake Shore Cryotronics 218/Lake Shore Cryotronics 218.aliases"/>
+				<Item Name="Lake Shore Cryotronics 218.lvlib" Type="Library" URL="../istr.lib/Lake Shore Cryotronics 218/Lake Shore Cryotronics 218.lvlib"/>
+				<Item Name="Lake Shore Cryotronics 218.lvlps" Type="Document" URL="../istr.lib/Lake Shore Cryotronics 218/Lake Shore Cryotronics 218.lvlps"/>
+				<Item Name="Lake Shore Cryotronics 218.lvproj" Type="Document" URL="../istr.lib/Lake Shore Cryotronics 218/Lake Shore Cryotronics 218.lvproj"/>
+			</Item>
+		</Item>
+		<Item Name="Public" Type="Folder">
+			<Item Name="Action-Status" Type="Folder"/>
+			<Item Name="Configuration" Type="Folder"/>
+			<Item Name="Data" Type="Folder"/>
+			<Item Name="Utility" Type="Folder"/>
+		</Item>
 		<Item Name="CRYO_LeakTest2.vi" Type="VI" URL="../CRYO_LeakTest2.vi"/>
 		<Item Name="CRYO_LeakTestDummy.vi" Type="VI" URL="../CRYO_LeakTestDummy.vi"/>
 		<Item Name="LVData.lvclass" Type="LVClass" URL="../LVData.lvclass"/>
 		<Item Name="USBData.lvclass" Type="LVClass" URL="../USBData.lvclass"/>
+		<Item Name="LSI218Data.lvclass" Type="LVClass" URL="../LSI218Data.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Boolean Array to Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDT.llb/Boolean Array to Digital.vi"/>
 				<Item Name="Convert 1DDbl to DDT 2.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/Convert 1DDbl to DDT 2.vi"/>
-				<Item Name="DAQmx Adjust 433x Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 433x Calibration.vi"/>
-				<Item Name="DAQmx Adjust 4300 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 4300 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 4302 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 4302 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 4303 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 4303 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 4304 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 4304 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 4305 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 4305 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 4309 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 4309 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 4310 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 4310 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 4322 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 4322 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 4339 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 4339 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 4353 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 4353 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 4357 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 4357 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 4463 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 4463 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 4610 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 4610 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9201 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9201 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9202 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9202 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9203 Gain Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9203 Gain Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9203 Offset Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9203 Offset Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9205 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9205 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9206 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9206 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9207 Gain Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9207 Gain Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9207 Offset Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9207 Offset Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9208 Gain Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9208 Gain Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9208 Offset Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9208 Offset Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9209 Gain Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9209 Gain Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9209 Offset Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9209 Offset Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9210 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9210 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9211 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9211 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9212 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9212 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9213 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9213 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9214 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9214 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9215 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9215 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9216 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9216 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9217 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9217 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9218 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9218 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9219 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9219 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9220 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9220 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9221 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9221 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9222 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9222 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9223 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9223 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9224 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9224 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9225 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9225 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9226 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9226 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9227 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9227 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9228 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9228 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9229 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9229 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9230 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9230 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9231 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9231 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9232 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9232 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9234 Gain Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9234 Gain Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9234 Offset Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9234 Offset Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9238 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9238 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9239 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9239 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9242 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9242 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9244 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9244 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9246 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9246 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9247 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9247 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9250 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9250 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9251 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9251 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9252 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9252 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9253 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9253 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9260 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9260 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9263 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9263 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9264 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9264 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9265 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9265 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9266 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9266 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9269 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9269 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 9775 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9775 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 11601 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 11601 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 11603 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 11603 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 11605 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 11605 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 11613 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 11613 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 11614 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 11614 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 11634 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 11634 Calibration.vi"/>
-				<Item Name="DAQmx Adjust 11637 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 11637 Calibration.vi"/>
-				<Item Name="DAQmx Adjust DSA AI Calibration With Gain and Coupling.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust DSA AI Calibration With Gain and Coupling.vi"/>
-				<Item Name="DAQmx Adjust DSA AI Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust DSA AI Calibration.vi"/>
-				<Item Name="DAQmx Adjust DSA AO Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust DSA AO Calibration.vi"/>
-				<Item Name="DAQmx Adjust DSA AO Timebase Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust DSA AO Timebase Calibration.vi"/>
-				<Item Name="DAQmx Adjust DSA Timebase Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust DSA Timebase Calibration.vi"/>
-				<Item Name="DAQmx Adjust SCXI 153x Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 153x Calibration.vi"/>
-				<Item Name="DAQmx Adjust SCXI 1102 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 1102 Calibration.vi"/>
-				<Item Name="DAQmx Adjust SCXI 1104 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 1104 Calibration.vi"/>
-				<Item Name="DAQmx Adjust SCXI 1112 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 1112 Calibration.vi"/>
-				<Item Name="DAQmx Adjust SCXI 1122 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 1122 Calibration.vi"/>
-				<Item Name="DAQmx Adjust SCXI 1124 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 1124 Calibration.vi"/>
-				<Item Name="DAQmx Adjust SCXI 1125 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 1125 Calibration.vi"/>
-				<Item Name="DAQmx Adjust SCXI 1126 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 1126 Calibration.vi"/>
-				<Item Name="DAQmx Adjust SCXI 1141 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 1141 Calibration.vi"/>
-				<Item Name="DAQmx Adjust SCXI 1142 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 1142 Calibration.vi"/>
-				<Item Name="DAQmx Adjust SCXI 1143 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 1143 Calibration.vi"/>
-				<Item Name="DAQmx Adjust SCXI 1502 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 1502 Calibration.vi"/>
-				<Item Name="DAQmx Adjust SCXI 1503 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 1503 Calibration.vi"/>
-				<Item Name="DAQmx Adjust SCXI 1503 Current Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 1503 Current Calibration.vi"/>
-				<Item Name="DAQmx Adjust SCXI 1520 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 1520 Calibration.vi"/>
-				<Item Name="DAQmx Adjust SCXI 1521 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 1521 Calibration.vi"/>
-				<Item Name="DAQmx Adjust SCXI 1540 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 1540 Calibration.vi"/>
 				<Item Name="DAQmx Advance Trigger (Digital Edge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Advance Trigger (Digital Edge).vi"/>
 				<Item Name="DAQmx Advance Trigger (None).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Advance Trigger (None).vi"/>
 				<Item Name="DAQmx Configure Logging (TDMS).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Configure Logging (TDMS).vi"/>
@@ -866,73 +824,12 @@
 				<Item Name="DAQmx Create Timing Source (Digital Edge using Counter).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/timing.llb/DAQmx Create Timing Source (Digital Edge using Counter).vi"/>
 				<Item Name="DAQmx Create Timing Source (Frequency).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/timing.llb/DAQmx Create Timing Source (Frequency).vi"/>
 				<Item Name="DAQmx Create Timing Source (Signal From Task).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/timing.llb/DAQmx Create Timing Source (Signal From Task).vi"/>
-				<Item Name="DAQmx Export Signal (Most Signals).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/events/hardwareSignals.llb/DAQmx Export Signal (Most Signals).vi"/>
 				<Item Name="DAQmx Fill In Error Info.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/DAQmx Fill In Error Info.vi"/>
-				<Item Name="DAQmx Get 4302 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 4302 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 4303 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 4303 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 4304 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 4304 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 4305 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 4305 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 4322 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 4322 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 4339 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 4339 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 4463 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 4463 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9201 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9201 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9202 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9202 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9203 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9203 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9207 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9207 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9208 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9208 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9209 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9209 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9212 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9212 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9213 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9213 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9214 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9214 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9215 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9215 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9216 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9216 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9217 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9217 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9218 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9218 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9219 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9219 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9220 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9220 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9221 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9221 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9222 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9222 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9223 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9223 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9224 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9224 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9225 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9225 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9226 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9226 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9227 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9227 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9228 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9228 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9229 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9229 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9230 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9230 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9231 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9231 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9232 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9232 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9234 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9234 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9238 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9238 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9239 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9239 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9242 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9242 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9244 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9244 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9246 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9246 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9247 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9247 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9250 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9250 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9251 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9251 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9252 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9252 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9253 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9253 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9260 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9260 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9263 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9263 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9264 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9264 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9265 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9265 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9266 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9266 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9269 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9269 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 9775 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9775 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 11601 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 11601 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 11603 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 11603 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 11605 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 11605 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 11613 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 11613 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 11614 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 11614 Calibration Adjustment Points.vi"/>
-				<Item Name="DAQmx Get 11634 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 11634 Calibration Adjustment Points.vi"/>
 				<Item Name="DAQmx Get Power Up States (Analog With Output Type).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/system.llb/DAQmx Get Power Up States (Analog With Output Type).vi"/>
 				<Item Name="DAQmx Get Power Up States (Analog).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/system.llb/DAQmx Get Power Up States (Analog).vi"/>
 				<Item Name="DAQmx Get Power Up States (Digital Logic Family).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/system.llb/DAQmx Get Power Up States (Digital Logic Family).vi"/>
 				<Item Name="DAQmx Get Power Up States (Digital Pull Up Pull Down).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/system.llb/DAQmx Get Power Up States (Digital Pull Up Pull Down).vi"/>
 				<Item Name="DAQmx Get Power Up States (Digital).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/system.llb/DAQmx Get Power Up States (Digital).vi"/>
-				<Item Name="DAQmx Perform Shunt Calibration Ex (Bridge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Perform Shunt Calibration Ex (Bridge).vi"/>
-				<Item Name="DAQmx Perform Shunt Calibration Ex (Strain).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Perform Shunt Calibration Ex (Strain).vi"/>
 				<Item Name="DAQmx Read (Analog 1D DBL 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Analog 1D DBL 1Chan NSamp).vi"/>
 				<Item Name="DAQmx Read (Analog 1D DBL NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Analog 1D DBL NChan 1Samp).vi"/>
 				<Item Name="DAQmx Read (Analog 1D Wfm NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Analog 1D Wfm NChan 1Samp).vi"/>
@@ -996,12 +893,9 @@
 				<Item Name="DAQmx Reference Trigger (Digital Pattern).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Reference Trigger (Digital Pattern).vi"/>
 				<Item Name="DAQmx Reference Trigger (None).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Reference Trigger (None).vi"/>
 				<Item Name="DAQmx Set Power Up States (Analog With Output Type).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/system.llb/DAQmx Set Power Up States (Analog With Output Type).vi"/>
-				<Item Name="DAQmx Set Power Up States (Analog).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/system.llb/DAQmx Set Power Up States (Analog).vi"/>
 				<Item Name="DAQmx Set Power Up States (Digital Logic Family).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/system.llb/DAQmx Set Power Up States (Digital Logic Family).vi"/>
 				<Item Name="DAQmx Set Power Up States (Digital Pull Up Pull Down).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/system.llb/DAQmx Set Power Up States (Digital Pull Up Pull Down).vi"/>
 				<Item Name="DAQmx Set Power Up States (Digital).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/system.llb/DAQmx Set Power Up States (Digital).vi"/>
-				<Item Name="DAQmx Setup 433x Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 433x Calibration.vi"/>
-				<Item Name="DAQmx Setup 4302 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 4302 Calibration.vi"/>
 				<Item Name="DAQmx Setup 4303 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 4303 Calibration.vi"/>
 				<Item Name="DAQmx Setup 4304 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 4304 Calibration.vi"/>
 				<Item Name="DAQmx Setup 4305 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 4305 Calibration.vi"/>
@@ -1009,36 +903,10 @@
 				<Item Name="DAQmx Setup 4339 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 4339 Calibration.vi"/>
 				<Item Name="DAQmx Setup 4463 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 4463 Calibration.vi"/>
 				<Item Name="DAQmx Setup 4480 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 4480 Calibration.vi"/>
-				<Item Name="DAQmx Setup 9218 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 9218 Calibration.vi"/>
-				<Item Name="DAQmx Setup 9219 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 9219 Calibration.vi"/>
-				<Item Name="DAQmx Setup 9242 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 9242 Calibration.vi"/>
-				<Item Name="DAQmx Setup 9244 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 9244 Calibration.vi"/>
-				<Item Name="DAQmx Setup 9260 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 9260 Calibration.vi"/>
-				<Item Name="DAQmx Setup 9263 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 9263 Calibration.vi"/>
-				<Item Name="DAQmx Setup 9264 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 9264 Calibration.vi"/>
-				<Item Name="DAQmx Setup 9265 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 9265 Calibration.vi"/>
-				<Item Name="DAQmx Setup 9266 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 9266 Calibration.vi"/>
-				<Item Name="DAQmx Setup 9269 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 9269 Calibration.vi"/>
 				<Item Name="DAQmx Setup 11605 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 11605 Calibration.vi"/>
 				<Item Name="DAQmx Setup 11634 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 11634 Calibration.vi"/>
 				<Item Name="DAQmx Setup 11637 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 11637 Calibration.vi"/>
 				<Item Name="DAQmx Setup DSA AO Timebase Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup DSA AO Timebase Calibration.vi"/>
-				<Item Name="DAQmx Setup SCXI 153x Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup SCXI 153x Calibration.vi"/>
-				<Item Name="DAQmx Setup SCXI 1102 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup SCXI 1102 Calibration.vi"/>
-				<Item Name="DAQmx Setup SCXI 1104 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup SCXI 1104 Calibration.vi"/>
-				<Item Name="DAQmx Setup SCXI 1112 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup SCXI 1112 Calibration.vi"/>
-				<Item Name="DAQmx Setup SCXI 1122 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup SCXI 1122 Calibration.vi"/>
-				<Item Name="DAQmx Setup SCXI 1124 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup SCXI 1124 Calibration.vi"/>
-				<Item Name="DAQmx Setup SCXI 1125 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup SCXI 1125 Calibration.vi"/>
-				<Item Name="DAQmx Setup SCXI 1126 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup SCXI 1126 Calibration.vi"/>
-				<Item Name="DAQmx Setup SCXI 1141 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup SCXI 1141 Calibration.vi"/>
-				<Item Name="DAQmx Setup SCXI 1142 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup SCXI 1142 Calibration.vi"/>
-				<Item Name="DAQmx Setup SCXI 1143 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup SCXI 1143 Calibration.vi"/>
-				<Item Name="DAQmx Setup SCXI 1502 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup SCXI 1502 Calibration.vi"/>
-				<Item Name="DAQmx Setup SCXI 1503 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup SCXI 1503 Calibration.vi"/>
-				<Item Name="DAQmx Setup SCXI 1520 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup SCXI 1520 Calibration.vi"/>
-				<Item Name="DAQmx Setup SCXI 1521 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup SCXI 1521 Calibration.vi"/>
-				<Item Name="DAQmx Setup SCXI 1540 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup SCXI 1540 Calibration.vi"/>
 				<Item Name="DAQmx Start Trigger (Analog Edge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Start Trigger (Analog Edge).vi"/>
 				<Item Name="DAQmx Start Trigger (Analog Multi Edge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Start Trigger (Analog Multi Edge).vi"/>
 				<Item Name="DAQmx Start Trigger (Analog Window).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Start Trigger (Analog Window).vi"/>
@@ -1050,17 +918,14 @@
 				<Item Name="DAQmx Switch Connect (Single).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/hardwareSpecific/Switch.llb/DAQmx Switch Connect (Single).vi"/>
 				<Item Name="DAQmx Switch Disconnect (Multiple).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/hardwareSpecific/Switch.llb/DAQmx Switch Disconnect (Multiple).vi"/>
 				<Item Name="DAQmx Switch Disconnect (Single).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/hardwareSpecific/Switch.llb/DAQmx Switch Disconnect (Single).vi"/>
-				<Item Name="DAQmx Switch Get Relay Count (Multiple).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/hardwareSpecific/Switch.llb/DAQmx Switch Get Relay Count (Multiple).vi"/>
 				<Item Name="DAQmx Switch Get Relay Count (Single).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/hardwareSpecific/Switch.llb/DAQmx Switch Get Relay Count (Single).vi"/>
 				<Item Name="DAQmx Switch Get Relay Position (Multiple).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/hardwareSpecific/Switch.llb/DAQmx Switch Get Relay Position (Multiple).vi"/>
 				<Item Name="DAQmx Switch Get Relay Position (Single).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/hardwareSpecific/Switch.llb/DAQmx Switch Get Relay Position (Single).vi"/>
-				<Item Name="DAQmx Timing (Burst Export Clock).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Burst Export Clock).vi"/>
 				<Item Name="DAQmx Timing (Burst Import Clock).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Burst Import Clock).vi"/>
 				<Item Name="DAQmx Timing (Change Detection).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Change Detection).vi"/>
 				<Item Name="DAQmx Timing (Handshaking).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Handshaking).vi"/>
 				<Item Name="DAQmx Timing (Implicit).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Implicit).vi"/>
 				<Item Name="DAQmx Timing (Pipelined Sample Clock).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Pipelined Sample Clock).vi"/>
-				<Item Name="DAQmx Timing (Sample Clock).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Sample Clock).vi"/>
 				<Item Name="DAQmx Timing (Use Waveform).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Use Waveform).vi"/>
 				<Item Name="DAQmx Write (Analog 1D DBL 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog 1D DBL 1Chan NSamp).vi"/>
 				<Item Name="DAQmx Write (Analog 1D DBL NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog 1D DBL NChan 1Samp).vi"/>
@@ -1101,15 +966,10 @@
 				<Item Name="DAQmx Write (Digital U16 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital U16 1Chan 1Samp).vi"/>
 				<Item Name="DAQmx Write (Digital U32 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital U32 1Chan 1Samp).vi"/>
 				<Item Name="DAQmx Write (Digital Wfm 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital Wfm 1Chan 1Samp).vi"/>
-				<Item Name="DAQmx Write (Digital Wfm 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Digital Wfm 1Chan NSamp).vi"/>
 				<Item Name="DAQmx Write (Raw 1D I8).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Raw 1D I8).vi"/>
 				<Item Name="DAQmx Write (Raw 1D I16).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Raw 1D I16).vi"/>
 				<Item Name="DAQmx Write (Raw 1D I32).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Raw 1D I32).vi"/>
 				<Item Name="DAQmx Write (Raw 1D U8).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Raw 1D U8).vi"/>
-				<Item Name="DAQmx Write (Raw 1D U16).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Raw 1D U16).vi"/>
-				<Item Name="DAQmx Write (Raw 1D U32).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Raw 1D U32).vi"/>
-				<Item Name="DAQmx Write TEDS Data (TEDS Data File).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/channels.llb/DAQmx Write TEDS Data (TEDS Data File).vi"/>
-				<Item Name="DAQmx Write TEDS Data (U8 Array).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/channels.llb/DAQmx Write TEDS Data (U8 Array).vi"/>
 				<Item Name="DTbl Boolean Array to Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Boolean Array to Digital.vi"/>
 				<Item Name="DTbl Compress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Compress Digital.vi"/>
 				<Item Name="DTbl Digital Size.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital Size.vi"/>
@@ -1119,9 +979,55 @@
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="sub Dynamic To Waveform Array.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/sub Dynamic To Waveform Array.vi"/>
 				<Item Name="sub Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/sub Waveform Array To Dynamic.vi"/>
+				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
+				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
+				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
+				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
+				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
+				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
+				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
+				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
+				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
+				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
+				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
+				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
+				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
+				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
+				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
+				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
+				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
+				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
+				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
+				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
+				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
+				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
+				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
+				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
+				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
+				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
+				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
+				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
+				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
+				<Item Name="Read Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet.vi"/>
+				<Item Name="Read Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (DBL).vi"/>
+				<Item Name="Read Lines From File (with error IO).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Lines From File (with error IO).vi"/>
+				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
+				<Item Name="Read File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read File+ (string).vi"/>
+				<Item Name="compatReadText.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatReadText.vi"/>
+				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
+				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
+				<Item Name="Read Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (I64).vi"/>
+				<Item Name="Read Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (string).vi"/>
+				<Item Name="DAQmx Adjust 9215 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9215 Calibration.vi"/>
+				<Item Name="DAQmx Adjust DSA AO Timebase Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust DSA AO Timebase Calibration.vi"/>
+				<Item Name="DAQmx Adjust SCXI 1521 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust SCXI 1521 Calibration.vi"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="LVDataSetting.ctl" Type="VI" URL="../ctl/LVDataSetting.ctl"/>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
