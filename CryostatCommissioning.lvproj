@@ -748,6 +748,7 @@
 		<Item Name="USBData.lvclass" Type="LVClass" URL="../USBData.lvclass"/>
 		<Item Name="LSI218Data.lvclass" Type="LVClass" URL="../LSI218Data.lvclass"/>
 		<Item Name="CRYO_VavleControlProto.vi" Type="VI" URL="../CRYO_VavleControlProto.vi"/>
+		<Item Name="CRYO_DAQ_LSI218.vi" Type="VI" URL="../CRYO_DAQ_LSI218.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
