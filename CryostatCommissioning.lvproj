@@ -748,7 +748,8 @@
 		<Item Name="USBData.lvclass" Type="LVClass" URL="../USBData.lvclass"/>
 		<Item Name="LSI218Data.lvclass" Type="LVClass" URL="../LSI218Data.lvclass"/>
 		<Item Name="CRYO_VavleControlProto.vi" Type="VI" URL="../CRYO_VavleControlProto.vi"/>
-		<Item Name="CRYO_DAQ_LSI218.vi" Type="VI" URL="../CRYO_DAQ_LSI218.vi"/>
+		<Item Name="CRYO_MASTER.vi" Type="VI" URL="../CRYO_MASTER.vi"/>
+		<Item Name="BuildPlotLegends.vi" Type="VI" URL="../custom/BuildPlotLegends.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
@@ -813,6 +814,7 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="BuildPlotLegends_LSI218.vi" Type="VI" URL="../custom/BuildPlotLegends_LSI218.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
