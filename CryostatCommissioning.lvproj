@@ -42,6 +42,11 @@
 					<Item Name="Data" Type="Folder"/>
 					<Item Name="Utility" Type="Folder"/>
 				</Item>
+				<Item Name="Lake Shore 336.aliases" Type="Document" URL="../istr.lib/Lake Shore 336/Lake Shore 336.aliases"/>
+				<Item Name="Lake Shore 336.lvlib" Type="Library" URL="../istr.lib/Lake Shore 336/Lake Shore 336.lvlib"/>
+				<Item Name="Lake Shore 336.lvlps" Type="Document" URL="../istr.lib/Lake Shore 336/Lake Shore 336.lvlps"/>
+				<Item Name="Lake Shore 336.lvproj" Type="Document" URL="../istr.lib/Lake Shore 336/Lake Shore 336.lvproj"/>
+				<Item Name="Lake Shore Cryotronics 336 Readme.html" Type="Document" URL="../istr.lib/Lake Shore 336/Lake Shore Cryotronics 336 Readme.html"/>
 			</Item>
 			<Item Name="Lake Shore Cryotronics 218" Type="Folder">
 				<Item Name="Examples" Type="Folder">
@@ -750,6 +755,7 @@
 		<Item Name="CRYO_VavleControlProto.vi" Type="VI" URL="../CRYO_VavleControlProto.vi"/>
 		<Item Name="CRYO_MASTER.vi" Type="VI" URL="../CRYO_MASTER.vi"/>
 		<Item Name="BuildPlotLegends.vi" Type="VI" URL="../custom/BuildPlotLegends.vi"/>
+		<Item Name="LSI336Data.lvclass" Type="LVClass" URL="../LSI336Data.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
@@ -809,6 +815,7 @@
 				<Item Name="DAQmx Clear Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Clear Task.vi"/>
 				<Item Name="DAQmx Create Channel (AI-Voltage-Basic).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Voltage-Basic).vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="subTimeDelay.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/TimeDelayBlock.llb/subTimeDelay.vi"/>
 			</Item>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
