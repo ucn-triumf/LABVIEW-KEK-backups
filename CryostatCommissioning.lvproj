@@ -110,6 +110,21 @@
 				<Item Name="ADCMT 6240.lvlps" Type="Document" URL="../istr.lib/ADCMT 6240/ADCMT 6240.lvlps"/>
 				<Item Name="ADCMT 6240.lvproj" Type="Document" URL="../istr.lib/ADCMT 6240/ADCMT 6240.lvproj"/>
 			</Item>
+			<Item Name="AMI1700" Type="Folder">
+				<Item Name="configuration" Type="Folder">
+					<Item Name="GetLength.vi" Type="VI" URL="../istr.lib/AMI1700/configuration/GetLength.vi"/>
+					<Item Name="GetUnit.vi" Type="VI" URL="../istr.lib/AMI1700/configuration/GetUnit.vi"/>
+					<Item Name="HeConfiguration.vi" Type="VI" URL="../istr.lib/AMI1700/configuration/HeConfiguration.vi"/>
+					<Item Name="MeasurementMode.vi" Type="VI" URL="../istr.lib/AMI1700/configuration/MeasurementMode.vi"/>
+				</Item>
+				<Item Name="examples" Type="Folder">
+					<Item Name="InitializeHeliumReadout.vi" Type="VI" URL="../istr.lib/AMI1700/examples/InitializeHeliumReadout.vi"/>
+					<Item Name="SIngleMeasurement.vi" Type="VI" URL="../istr.lib/AMI1700/examples/SIngleMeasurement.vi"/>
+				</Item>
+				<Item Name="AMI1700.aliases" Type="Document" URL="../istr.lib/AMI1700/AMI1700.aliases"/>
+				<Item Name="AMI1700.lvlps" Type="Document" URL="../istr.lib/AMI1700/AMI1700.lvlps"/>
+				<Item Name="AMI1700.lvproj" Type="Document" URL="../istr.lib/AMI1700/AMI1700.lvproj"/>
+			</Item>
 		</Item>
 		<Item Name="DAQmx" Type="Folder">
 			<Item Name="calibration" Type="Folder">
