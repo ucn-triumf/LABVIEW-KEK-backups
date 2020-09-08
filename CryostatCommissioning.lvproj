@@ -27,6 +27,7 @@
 			<Item Name="FileWrite.vi" Type="VI" URL="../custom/FileWrite.vi"/>
 			<Item Name="Basic Serial Write and Read modified.vi" Type="VI" URL="../custom/Basic Serial Write and Read modified.vi"/>
 			<Item Name="ReadSpreadsheet.vi" Type="VI" URL="../custom/ReadSpreadsheet.vi"/>
+			<Item Name="RR_OneCh_MovAvg.vi" Type="VI" URL="../custom/RR_OneCh_MovAvg.vi"/>
 		</Item>
 		<Item Name="examples" Type="Folder">
 			<Item Name="Demo.vi" Type="VI" URL="../examples/Demo.vi"/>
@@ -767,7 +768,7 @@
 		<Item Name="LVData.lvclass" Type="LVClass" URL="../LVData.lvclass"/>
 		<Item Name="USBData.lvclass" Type="LVClass" URL="../USBData.lvclass"/>
 		<Item Name="LSI218Data.lvclass" Type="LVClass" URL="../LSI218Data.lvclass"/>
-		<Item Name="CRYO_VavleControlProto.vi" Type="VI" URL="../CRYO_VavleControlProto.vi"/>
+		<Item Name="CRYO_VavleControlProto_2.vi" Type="VI" URL="../CRYO_VavleControlProto_2.vi"/>
 		<Item Name="CRYO_MASTER.vi" Type="VI" URL="../CRYO_MASTER.vi"/>
 		<Item Name="BuildPlotLegends.vi" Type="VI" URL="../custom/BuildPlotLegends.vi"/>
 		<Item Name="LSI336Data.lvclass" Type="LVClass" URL="../LSI336Data.lvclass"/>
