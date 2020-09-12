@@ -29,6 +29,7 @@
 			<Item Name="Basic Serial Write and Read modified.vi" Type="VI" URL="../custom/Basic Serial Write and Read modified.vi"/>
 			<Item Name="ReadSpreadsheet.vi" Type="VI" URL="../custom/ReadSpreadsheet.vi"/>
 			<Item Name="RR_OneCh_MovAvg.vi" Type="VI" URL="../custom/RR_OneCh_MovAvg.vi"/>
+			<Item Name="MovingAverage.vi" Type="VI" URL="../custom/MovingAverage.vi"/>
 		</Item>
 		<Item Name="examples" Type="Folder">
 			<Item Name="Demo.vi" Type="VI" URL="../examples/Demo.vi"/>
@@ -776,6 +777,8 @@
 		<Item Name="LSI336Data.lvclass" Type="LVClass" URL="../LSI336Data.lvclass"/>
 		<Item Name="6240AData.lvclass" Type="LVClass" URL="../6240AData.lvclass"/>
 		<Item Name="ADCMT6240ACtrlProto.vi" Type="VI" URL="../ADCMT6240ACtrlProto.vi"/>
+		<Item Name="CRYO_MASTER_temp_0911.vi" Type="VI" URL="../CRYO_MASTER_temp_0911.vi"/>
+		<Item Name="CheckBug.vi" Type="VI" URL="../custom/CheckBug.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
