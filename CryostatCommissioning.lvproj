@@ -778,7 +778,6 @@
 		<Item Name="6240AData.lvclass" Type="LVClass" URL="../6240AData.lvclass"/>
 		<Item Name="ADCMT6240ACtrlProto.vi" Type="VI" URL="../ADCMT6240ACtrlProto.vi"/>
 		<Item Name="CRYO_MASTER_FULL.vi" Type="VI" URL="../CRYO_MASTER_FULL.vi"/>
-		<Item Name="CheckBug.vi" Type="VI" URL="../custom/CheckBug.vi"/>
 		<Item Name="CRYO_MASTER_FULL-old.vi" Type="VI" URL="../CRYO_MASTER_FULL-old.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
