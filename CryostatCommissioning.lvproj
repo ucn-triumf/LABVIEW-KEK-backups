@@ -766,11 +766,9 @@
 			</Item>
 		</Item>
 		<Item Name="CRYO_LeakTest2.vi" Type="VI" URL="../CRYO_LeakTest2.vi"/>
-		<Item Name="CRYO_LeakTestDummy.vi" Type="VI" URL="../CRYO_LeakTestDummy.vi"/>
 		<Item Name="CRYO_VavleControlProto.vi" Type="VI" URL="../CRYO_VavleControlProto.vi"/>
 		<Item Name="CRYO_VavleControlProto_2.vi" Type="VI" URL="../CRYO_VavleControlProto_2.vi"/>
 		<Item Name="CRYO_MASTER.vi" Type="VI" URL="../CRYO_MASTER.vi"/>
-		<Item Name="CRYO_MASTER_FULL_old.vi" Type="VI" URL="../CRYO_MASTER_FULL_old.vi"/>
 		<Item Name="LVData.lvclass" Type="LVClass" URL="../LVData.lvclass"/>
 		<Item Name="USBData.lvclass" Type="LVClass" URL="../USBData.lvclass"/>
 		<Item Name="LSI218Data.lvclass" Type="LVClass" URL="../LSI218Data.lvclass"/>
@@ -778,7 +776,7 @@
 		<Item Name="6240AData.lvclass" Type="LVClass" URL="../6240AData.lvclass"/>
 		<Item Name="ADCMT6240ACtrlProto.vi" Type="VI" URL="../ADCMT6240ACtrlProto.vi"/>
 		<Item Name="CRYO_MASTER_FULL.vi" Type="VI" URL="../CRYO_MASTER_FULL.vi"/>
-		<Item Name="CRYO_MASTER_FULL-old.vi" Type="VI" URL="../CRYO_MASTER_FULL-old.vi"/>
+		<Item Name="CRYO_MASTER_FULL_dev.vi" Type="VI" URL="../CRYO_MASTER_FULL_dev.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
