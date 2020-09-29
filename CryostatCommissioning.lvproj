@@ -18,6 +18,7 @@
 			<Item Name="USBDataSetting_Series.ctl" Type="VI" URL="../ctl/USBDataSetting_Series.ctl"/>
 			<Item Name="LSIDataSetting.ctl" Type="VI" URL="../ctl/LSIDataSetting.ctl"/>
 			<Item Name="LVDataSetting.ctl" Type="VI" URL="../ctl/LVDataSetting.ctl"/>
+			<Item Name="DMMsSetting.ctl" Type="VI" URL="../ctl/DMMsSetting.ctl"/>
 		</Item>
 		<Item Name="custom" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
@@ -127,6 +128,72 @@
 				<Item Name="AMI1700.aliases" Type="Document" URL="../istr.lib/AMI1700/AMI1700.aliases"/>
 				<Item Name="AMI1700.lvlps" Type="Document" URL="../istr.lib/AMI1700/AMI1700.lvlps"/>
 				<Item Name="AMI1700.lvproj" Type="Document" URL="../istr.lib/AMI1700/AMI1700.lvproj"/>
+			</Item>
+			<Item Name="ADCMT7351_ADC" Type="Folder">
+				<Item Name="Examples" Type="Folder">
+					<Item Name="ADCMT7351 Read Multiple.vi" Type="VI" URL="../istr.lib/ADCMT7351_ADC/Examples/ADCMT7351 Read Multiple.vi"/>
+					<Item Name="ADCMT7351 Read Single.vi" Type="VI" URL="../istr.lib/ADCMT7351_ADC/Examples/ADCMT7351 Read Single.vi"/>
+				</Item>
+				<Item Name="Private" Type="Folder"/>
+				<Item Name="Public" Type="Folder">
+					<Item Name="Configure" Type="Folder">
+						<Item Name="Low Level" Type="Folder"/>
+					</Item>
+					<Item Name="Data" Type="Folder">
+						<Item Name="Low Level" Type="Folder"/>
+					</Item>
+					<Item Name="Utility" Type="Folder"/>
+				</Item>
+				<Item Name="ADCMT7351_ADC Readme.html" Type="Document" URL="../istr.lib/ADCMT7351_ADC/ADCMT7351_ADC Readme.html"/>
+				<Item Name="ADCMT7351_ADC.aliases" Type="Document" URL="../istr.lib/ADCMT7351_ADC/ADCMT7351_ADC.aliases"/>
+				<Item Name="ADCMT7351_ADC.lvlib" Type="Library" URL="../istr.lib/ADCMT7351_ADC/ADCMT7351_ADC.lvlib"/>
+				<Item Name="ADCMT7351_ADC.lvproj" Type="Document" URL="../istr.lib/ADCMT7351_ADC/ADCMT7351_ADC.lvproj"/>
+			</Item>
+			<Item Name="HP3478A" Type="Folder">
+				<Item Name="HP3478A" Type="Folder">
+					<Item Name="HP 3478A.vi" Type="VI" URL="../istr.lib/HP3478A/HP3478A.LLB/HP 3478A.vi"/>
+					<Item Name="HP 3478A_multiple.vi" Type="VI" URL="../istr.lib/HP3478A/HP3478A.LLB/HP 3478A_multiple.vi"/>
+				</Item>
+				<Item Name="DIR.MNU" Type="Document" URL="../istr.lib/HP3478A/DIR.MNU"/>
+			</Item>
+			<Item Name="Agilent 34401" Type="Folder">
+				<Item Name="Examples" Type="Folder">
+					<Item Name="Agilent 34401 Acquire and Chart - External Triggered.vi" Type="VI" URL="../istr.lib/Agilent 34401/Examples/Agilent 34401 Acquire and Chart - External Triggered.vi"/>
+					<Item Name="Agilent 34401 Acquire and Chart - Pretriggered.vi" Type="VI" URL="../istr.lib/Agilent 34401/Examples/Agilent 34401 Acquire and Chart - Pretriggered.vi"/>
+					<Item Name="Agilent 34401 Acquire and Chart - Triggered.vi" Type="VI" URL="../istr.lib/Agilent 34401/Examples/Agilent 34401 Acquire and Chart - Triggered.vi"/>
+					<Item Name="Agilent 34401 Acquire and Graph - SW Triggered.vi" Type="VI" URL="../istr.lib/Agilent 34401/Examples/Agilent 34401 Acquire and Graph - SW Triggered.vi"/>
+					<Item Name="Agilent 34401 Read Math Measurement.vi" Type="VI" URL="../istr.lib/Agilent 34401/Examples/Agilent 34401 Read Math Measurement.vi"/>
+					<Item Name="Agilent 34401 Read Multiple Measurements.vi" Type="VI" URL="../istr.lib/Agilent 34401/Examples/Agilent 34401 Read Multiple Measurements.vi"/>
+					<Item Name="Agilent 34401 Read Single Measurement.vi" Type="VI" URL="../istr.lib/Agilent 34401/Examples/Agilent 34401 Read Single Measurement.vi"/>
+					<Item Name="Agilent 34401 Read Temperature Measurement (RTD).vi" Type="VI" URL="../istr.lib/Agilent 34401/Examples/Agilent 34401 Read Temperature Measurement (RTD).vi"/>
+					<Item Name="Agilent 34401 Read Transient Measurement.vi" Type="VI" URL="../istr.lib/Agilent 34401/Examples/Agilent 34401 Read Transient Measurement.vi"/>
+					<Item Name="Agilent 34401.bin3" Type="Document" URL="../istr.lib/Agilent 34401/Examples/Agilent 34401.bin3"/>
+				</Item>
+				<Item Name="Private" Type="Folder">
+					<Item Name="Agilent 34401.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Agilent 34401/Agilent 34401.lvlib"/>
+				</Item>
+				<Item Name="Public" Type="Folder">
+					<Item Name="Configure" Type="Folder">
+						<Item Name="Low Level" Type="Folder">
+							<Item Name="Configure_Low Level.mnu" Type="Document" URL="../istr.lib/Agilent 34401/Public/Configure/Low Level/Configure_Low Level.mnu"/>
+						</Item>
+						<Item Name="Configure.mnu" Type="Document" URL="../istr.lib/Agilent 34401/Public/Configure/Configure.mnu"/>
+					</Item>
+					<Item Name="Data" Type="Folder">
+						<Item Name="Low Level" Type="Folder">
+							<Item Name="Data_Low Level.mnu" Type="Document" URL="../istr.lib/Agilent 34401/Public/Data/Low Level/Data_Low Level.mnu"/>
+						</Item>
+						<Item Name="Data.mnu" Type="Document" URL="../istr.lib/Agilent 34401/Public/Data/Data.mnu"/>
+					</Item>
+					<Item Name="Obsolete" Type="Folder"/>
+					<Item Name="Utility" Type="Folder">
+						<Item Name="Utility.mnu" Type="Document" URL="../istr.lib/Agilent 34401/Public/Utility/Utility.mnu"/>
+					</Item>
+					<Item Name="dir.mnu" Type="Document" URL="../istr.lib/Agilent 34401/Public/dir.mnu"/>
+				</Item>
+				<Item Name="Agilent 34401 Readme.html" Type="Document" URL="../istr.lib/Agilent 34401/Agilent 34401 Readme.html"/>
+				<Item Name="Agilent 34401.aliases" Type="Document" URL="../istr.lib/Agilent 34401/Agilent 34401.aliases"/>
+				<Item Name="Agilent 34401.lvproj" Type="Document" URL="../istr.lib/Agilent 34401/Agilent 34401.lvproj"/>
 			</Item>
 		</Item>
 		<Item Name="DAQmx" Type="Folder">
@@ -774,6 +841,7 @@
 		<Item Name="LSI218Data.lvclass" Type="LVClass" URL="../LSI218Data.lvclass"/>
 		<Item Name="LSI336Data.lvclass" Type="LVClass" URL="../LSI336Data.lvclass"/>
 		<Item Name="6240AData.lvclass" Type="LVClass" URL="../6240AData.lvclass"/>
+		<Item Name="DMMsData.lvclass" Type="LVClass" URL="../DMMsData.lvclass"/>
 		<Item Name="ADCMT6240ACtrlProto.vi" Type="VI" URL="../ADCMT6240ACtrlProto.vi"/>
 		<Item Name="CRYO_MASTER_FULL.vi" Type="VI" URL="../CRYO_MASTER_FULL.vi"/>
 		<Item Name="CRYO_MASTER_FULL_dev.vi" Type="VI" URL="../CRYO_MASTER_FULL_dev.vi"/>
@@ -844,6 +912,7 @@
 				<Item Name="Check File Permissions.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check File Permissions.vi"/>
 				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
 				<Item Name="Write PNG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/png.llb/Write PNG File.vi"/>
+				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 			</Item>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
