@@ -843,7 +843,7 @@
 		<Item Name="6240AData.lvclass" Type="LVClass" URL="../6240AData.lvclass"/>
 		<Item Name="DMMsData.lvclass" Type="LVClass" URL="../DMMsData.lvclass"/>
 		<Item Name="ADCMT6240ACtrlProto.vi" Type="VI" URL="../ADCMT6240ACtrlProto.vi"/>
-		<Item Name="CRYO_MASTER_FULL.vi" Type="VI" URL="../CRYO_MASTER_FULL.vi"/>
+		<Item Name="CRYO_MASTER_FULL_IP.vi" Type="VI" URL="../CRYO_MASTER_FULL_IP.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
