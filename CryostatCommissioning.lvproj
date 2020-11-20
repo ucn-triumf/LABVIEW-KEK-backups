@@ -19,6 +19,8 @@
 			<Item Name="LSIDataSetting.ctl" Type="VI" URL="../ctl/LSIDataSetting.ctl"/>
 			<Item Name="LVDataSetting.ctl" Type="VI" URL="../ctl/LVDataSetting.ctl"/>
 			<Item Name="DMMsSetting.ctl" Type="VI" URL="../ctl/DMMsSetting.ctl"/>
+			<Item Name="DataSource.ctl" Type="VI" URL="../ctl/DataSource.ctl"/>
+			<Item Name="RecordSetting.ctl" Type="VI" URL="../ctl/RecordSetting.ctl"/>
 		</Item>
 		<Item Name="custom" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
@@ -194,6 +196,12 @@
 				<Item Name="Agilent 34401 Readme.html" Type="Document" URL="../istr.lib/Agilent 34401/Agilent 34401 Readme.html"/>
 				<Item Name="Agilent 34401.aliases" Type="Document" URL="../istr.lib/Agilent 34401/Agilent 34401.aliases"/>
 				<Item Name="Agilent 34401.lvproj" Type="Document" URL="../istr.lib/Agilent 34401/Agilent 34401.lvproj"/>
+			</Item>
+			<Item Name="Agilent 33XXX Series" Type="Folder">
+				<Item Name="Agilent 33XXX Series Readme.html" Type="Document" URL="../istr.lib/Agilent 33XXX Series/Agilent 33XXX Series Readme.html"/>
+				<Item Name="Agilent 33XXX Series.aliases" Type="Document" URL="../istr.lib/Agilent 33XXX Series/Agilent 33XXX Series.aliases"/>
+				<Item Name="Agilent 33XXX Series.lvlib" Type="Library" URL="../istr.lib/Agilent 33XXX Series/Agilent 33XXX Series.lvlib"/>
+				<Item Name="Agilent 33XXX Series.lvproj" Type="Document" URL="../istr.lib/Agilent 33XXX Series/Agilent 33XXX Series.lvproj"/>
 			</Item>
 		</Item>
 		<Item Name="DAQmx" Type="Folder">
@@ -911,6 +919,27 @@
 				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
 				<Item Name="Write PNG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/png.llb/Write PNG File.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
+				<Item Name="subSigGeneratorBlock.vi" Type="VI" URL="/&lt;vilib&gt;/Express/express input/SimulateSignalBlock.llb/subSigGeneratorBlock.vi"/>
+				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/Express/express shared/ex_CorrectErrorChain.vi"/>
+				<Item Name="ex_GenAddAttribs.vi" Type="VI" URL="/&lt;vilib&gt;/Express/express input/SimulateSignalBlock.llb/ex_GenAddAttribs.vi"/>
+				<Item Name="ex_WaveformAttribsPlus.ctl" Type="VI" URL="/&lt;vilib&gt;/Express/express shared/transition.llb/ex_WaveformAttribsPlus.ctl"/>
+				<Item Name="Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/Express/express shared/transition.llb/Waveform Array To Dynamic.vi"/>
+				<Item Name="ex_SetExpAttribsAndT0.vi" Type="VI" URL="/&lt;vilib&gt;/Express/express shared/transition.llb/ex_SetExpAttribsAndT0.vi"/>
+				<Item Name="ex_WaveformAttribs.ctl" Type="VI" URL="/&lt;vilib&gt;/Express/express shared/transition.llb/ex_WaveformAttribs.ctl"/>
+				<Item Name="ex_SetAllExpressAttribs.vi" Type="VI" URL="/&lt;vilib&gt;/Express/express shared/transition.llb/ex_SetAllExpressAttribs.vi"/>
+				<Item Name="Timestamp Subtract.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/Timestamp Subtract.vi"/>
+				<Item Name="I128 Timestamp.ctl" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/I128 Timestamp.ctl"/>
+				<Item Name="DU64_U32SubtractWithBorrow.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/DU64_U32SubtractWithBorrow.vi"/>
+				<Item Name="Timestamp Add.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/Timestamp Add.vi"/>
+				<Item Name="DU64_U32AddWithOverflow.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/DU64_U32AddWithOverflow.vi"/>
+				<Item Name="NI_MABase.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MABase.lvlib"/>
+				<Item Name="subGetSignalName.vi" Type="VI" URL="/&lt;vilib&gt;/Express/express input/SimulateSignalBlock.llb/subGetSignalName.vi"/>
+				<Item Name="subShouldUseDefSigName.vi" Type="VI" URL="/&lt;vilib&gt;/Express/express input/SimulateSignalBlock.llb/subShouldUseDefSigName.vi"/>
+				<Item Name="sub2ShouldUseDefSigName.vi" Type="VI" URL="/&lt;vilib&gt;/Express/express input/SimulateSignalBlock.llb/sub2ShouldUseDefSigName.vi"/>
+				<Item Name="subInternalTiming.vi" Type="VI" URL="/&lt;vilib&gt;/Express/express input/SimulateSignalBlock.llb/subInternalTiming.vi"/>
+				<Item Name="Nearest Frequency for Block.vi" Type="VI" URL="/&lt;vilib&gt;/Express/express input/SimulateSignalConfig.llb/Nearest Frequency for Block.vi"/>
+				<Item Name="Nearest Freq in Int Cycles.vi" Type="VI" URL="/&lt;vilib&gt;/Express/express input/SimulateSignalConfig.llb/Nearest Freq in Int Cycles.vi"/>
+				<Item Name="Dynamic To Waveform Array.vi" Type="VI" URL="/&lt;vilib&gt;/Express/express shared/transition.llb/Dynamic To Waveform Array.vi"/>
 			</Item>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
