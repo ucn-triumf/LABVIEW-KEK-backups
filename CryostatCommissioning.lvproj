@@ -40,14 +40,6 @@
 		</Item>
 		<Item Name="istr.lib" Type="Folder">
 			<Item Name="Lake Shore 336" Type="Folder">
-				<Item Name="Examples" Type="Folder"/>
-				<Item Name="Private" Type="Folder"/>
-				<Item Name="Public" Type="Folder">
-					<Item Name="Action-Status" Type="Folder"/>
-					<Item Name="Configure" Type="Folder"/>
-					<Item Name="Data" Type="Folder"/>
-					<Item Name="Utility" Type="Folder"/>
-				</Item>
 				<Item Name="Lake Shore 336.aliases" Type="Document" URL="../istr.lib/Lake Shore 336/Lake Shore 336.aliases"/>
 				<Item Name="Lake Shore 336.lvlib" Type="Library" URL="../istr.lib/Lake Shore 336/Lake Shore 336.lvlib"/>
 				<Item Name="Lake Shore 336.lvlps" Type="Document" URL="../istr.lib/Lake Shore 336/Lake Shore 336.lvlps"/>
@@ -202,6 +194,28 @@
 				<Item Name="Agilent 33XXX Series.aliases" Type="Document" URL="../istr.lib/Agilent 33XXX Series/Agilent 33XXX Series.aliases"/>
 				<Item Name="Agilent 33XXX Series.lvlib" Type="Library" URL="../istr.lib/Agilent 33XXX Series/Agilent 33XXX Series.lvlib"/>
 				<Item Name="Agilent 33XXX Series.lvproj" Type="Document" URL="../istr.lib/Agilent 33XXX Series/Agilent 33XXX Series.lvproj"/>
+			</Item>
+			<Item Name="ADCMT7451A_ADC" Type="Folder">
+				<Item Name="Examples" Type="Folder">
+					<Item Name="ADCMT7451A Read Memory Data ADC.vi" Type="VI" URL="../istr.lib/ADCMT7451A_ADC/Examples/ADCMT7451A Read Memory Data ADC.vi"/>
+					<Item Name="ADCMT7451A Read Single ADC.vi" Type="VI" URL="../istr.lib/ADCMT7451A_ADC/Examples/ADCMT7451A Read Single ADC.vi"/>
+				</Item>
+				<Item Name="Private" Type="Folder"/>
+				<Item Name="Public" Type="Folder">
+					<Item Name="Configure" Type="Folder">
+						<Item Name="Low Level" Type="Folder"/>
+					</Item>
+					<Item Name="Data" Type="Folder">
+						<Item Name="Low Level" Type="Folder"/>
+					</Item>
+					<Item Name="Utility" Type="Folder"/>
+					<Item Name="dir.mnu" Type="Document" URL="../istr.lib/ADCMT7451A_ADC/Public/dir.mnu"/>
+				</Item>
+				<Item Name="ADCMT7451_ADC.lvlib" Type="Library" URL="../istr.lib/ADCMT7451A_ADC/ADCMT7451_ADC.lvlib"/>
+				<Item Name="ADCMT7451A_ADC Readme.html" Type="Document" URL="../istr.lib/ADCMT7451A_ADC/ADCMT7451A_ADC Readme.html"/>
+				<Item Name="ADCMT7451A_ADC.aliases" Type="Document" URL="../istr.lib/ADCMT7451A_ADC/ADCMT7451A_ADC.aliases"/>
+				<Item Name="ADCMT7451A_ADC.lvlps" Type="Document" URL="../istr.lib/ADCMT7451A_ADC/ADCMT7451A_ADC.lvlps"/>
+				<Item Name="ADCMT7451A_ADC.lvproj" Type="Document" URL="../istr.lib/ADCMT7451A_ADC/ADCMT7451A_ADC.lvproj"/>
 			</Item>
 		</Item>
 		<Item Name="DAQmx" Type="Folder">
@@ -849,8 +863,10 @@
 		<Item Name="LSI336Data.lvclass" Type="LVClass" URL="../LSI336Data.lvclass"/>
 		<Item Name="6240AData.lvclass" Type="LVClass" URL="../6240AData.lvclass"/>
 		<Item Name="DMMsData.lvclass" Type="LVClass" URL="../DMMsData.lvclass"/>
+		<Item Name="LMData.lvclass" Type="LVClass" URL="../LMData.lvclass"/>
 		<Item Name="ADCMT6240ACtrlProto.vi" Type="VI" URL="../ADCMT6240ACtrlProto.vi"/>
 		<Item Name="CRYO_MASTER_FULL.vi" Type="VI" URL="../CRYO_MASTER_FULL.vi"/>
+		<Item Name="CRYO_MASTER_FULL_dev.vi" Type="VI" URL="../CRYO_MASTER_FULL_dev.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
