@@ -865,8 +865,8 @@
 		<Item Name="DMMsData.lvclass" Type="LVClass" URL="../DMMsData.lvclass"/>
 		<Item Name="LMData.lvclass" Type="LVClass" URL="../LMData.lvclass"/>
 		<Item Name="ADCMT6240ACtrlProto.vi" Type="VI" URL="../ADCMT6240ACtrlProto.vi"/>
-		<Item Name="CRYO_MASTER_FULL.vi" Type="VI" URL="../CRYO_MASTER_FULL.vi"/>
-		<Item Name="CRYO_MASTER_FULL_dev.vi" Type="VI" URL="../CRYO_MASTER_FULL_dev.vi"/>
+		<Item Name="CRYO_MASTER_FULL_RUN2.vi" Type="VI" URL="../CRYO_MASTER_FULL_RUN2.vi"/>
+		<Item Name="CRYO_MASTER_FULL_RUN3.vi" Type="VI" URL="../CRYO_MASTER_FULL_RUN3.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
