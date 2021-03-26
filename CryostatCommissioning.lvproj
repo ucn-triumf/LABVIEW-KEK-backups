@@ -868,6 +868,7 @@
 		<Item Name="CRYO_MASTER_FULL_RUN2.vi" Type="VI" URL="../CRYO_MASTER_FULL_RUN2.vi"/>
 		<Item Name="CRYO_MASTER_FULL_RUN3.vi" Type="VI" URL="../CRYO_MASTER_FULL_RUN3.vi"/>
 		<Item Name="CRYO_MASTER_FULL_RUN4.vi" Type="VI" URL="../CRYO_MASTER_FULL_RUN4.vi"/>
+		<Item Name="CRYO_MASTER_FULL_RUN4_dev.vi" Type="VI" URL="../CRYO_MASTER_FULL_RUN4_dev.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
