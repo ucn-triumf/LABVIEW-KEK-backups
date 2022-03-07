@@ -67,7 +67,6 @@
 					<Item Name="Data.mnu" Type="Document" URL="../istr.lib/Agilent 34401/Public/Data/Data.mnu"/>
 					<Item Name="Read (Math).vi" Type="VI" URL="../istr.lib/Agilent 34401/Public/Data/Read (Math).vi"/>
 					<Item Name="Read (Multiple Points).vi" Type="VI" URL="../istr.lib/Agilent 34401/Public/Data/Read (Multiple Points).vi"/>
-					<Item Name="Read (Single Point).vi" Type="VI" URL="../istr.lib/Agilent 34401/Public/Data/Read (Single Point).vi"/>
 					<Item Name="Read (Transient).vi" Type="VI" URL="../istr.lib/Agilent 34401/Public/Data/Read (Transient).vi"/>
 					<Item Name="Read.vi" Type="VI" URL="../istr.lib/Agilent 34401/Public/Data/Read.vi"/>
 				</Item>
@@ -91,14 +90,21 @@
 				</Item>
 				<Item Name="Close.vi" Type="VI" URL="../istr.lib/Agilent 34401/Public/Close.vi"/>
 				<Item Name="dir.mnu" Type="Document" URL="../istr.lib/Agilent 34401/Public/dir.mnu"/>
-				<Item Name="Initialize.vi" Type="VI" URL="../istr.lib/Agilent 34401/Public/Initialize.vi"/>
 			</Item>
 			<Item Name="Agilent 34401 Readme.html" Type="Document" URL="../istr.lib/Agilent 34401/Agilent 34401 Readme.html"/>
 			<Item Name="Agilent 34401.aliases" Type="Document" URL="../istr.lib/Agilent 34401/Agilent 34401.aliases"/>
-			<Item Name="Agilent 34401.lvlib" Type="Library" URL="../istr.lib/Agilent 34401/Agilent 34401.lvlib"/>
 			<Item Name="Agilent 34401.lvlps" Type="Document" URL="../istr.lib/Agilent 34401/Agilent 34401.lvlps"/>
 			<Item Name="Agilent 34401.lvproj" Type="Document" URL="../istr.lib/Agilent 34401/Agilent 34401.lvproj"/>
 		</Item>
+		<Item Name="Metrolab" Type="Folder">
+			<Item Name="Bscan.vi" Type="VI" URL="../Metrolab/Bscan.vi"/>
+			<Item Name="Bscan.vi - ショートカット.lnk" Type="VI" URL="../Metrolab/Bscan.vi - ショートカット.lnk"/>
+			<Item Name="Metrolab.vi" Type="VI" URL="../Metrolab/Metrolab.vi"/>
+			<Item Name="Metrolab_main.vi" Type="VI" URL="../Metrolab/Metrolab_main.vi"/>
+			<Item Name="MetrolabRead.vi" Type="VI" URL="../Metrolab/MetrolabRead.vi"/>
+			<Item Name="SaveString.vi" Type="VI" URL="../Metrolab/SaveString.vi"/>
+		</Item>
+		<Item Name="JPARC_foil_I_monitor.vi" Type="VI" URL="../JPARC_foil_I_monitor.vi"/>
 		<Item Name="JPARC_foil_main.vi" Type="VI" URL="../JPARC_foil_main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
@@ -158,6 +164,9 @@
 				<Item Name="Timestamp Add.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/Timestamp Add.vi"/>
 				<Item Name="Timestamp Subtract.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/Timestamp Subtract.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
+				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
+				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
+				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
 				<Item Name="Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/Express/express shared/transition.llb/Waveform Array To Dynamic.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
@@ -166,6 +175,33 @@
 			<Item Name="LV_UNIXTIME.vi" Type="VI" URL="../custom/LV_UNIXTIME.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 		</Item>
-		<Item Name="Build Specifications" Type="Build"/>
+		<Item Name="Build Specifications" Type="Build">
+			<Item Name="JPARC_CN" Type="Zip File">
+				<Property Name="Absolute[0]" Type="Bool">false</Property>
+				<Property Name="BuildName" Type="Str">JPARC_CN</Property>
+				<Property Name="Comments" Type="Str"></Property>
+				<Property Name="DestinationID[0]" Type="Str">{17425565-8966-49A8-9AC2-CB64A778013D}</Property>
+				<Property Name="DestinationItemCount" Type="Int">1</Property>
+				<Property Name="DestinationName[0]" Type="Str">Destination Directory</Property>
+				<Property Name="IncludedItemCount" Type="Int">1</Property>
+				<Property Name="IncludedItems[0]" Type="Ref">/My Computer</Property>
+				<Property Name="IncludeProject" Type="Bool">true</Property>
+				<Property Name="Path[0]" Type="Path">../../builds/JPARC_foil_CN/JPARC_CN/JPARC_foil_CN.zip</Property>
+				<Property Name="ZipBase" Type="Str">NI_zipbasedefault</Property>
+			</Item>
+			<Item Name="My Zip File" Type="Zip File">
+				<Property Name="Absolute[0]" Type="Bool">false</Property>
+				<Property Name="BuildName" Type="Str">My Zip File</Property>
+				<Property Name="Comments" Type="Str"></Property>
+				<Property Name="DestinationID[0]" Type="Str">{96C87B2B-75FE-46E4-856B-A15D7304E9FD}</Property>
+				<Property Name="DestinationItemCount" Type="Int">1</Property>
+				<Property Name="DestinationName[0]" Type="Str">Destination Directory</Property>
+				<Property Name="IncludedItemCount" Type="Int">1</Property>
+				<Property Name="IncludedItems[0]" Type="Ref">/My Computer</Property>
+				<Property Name="IncludeProject" Type="Bool">true</Property>
+				<Property Name="Path[0]" Type="Path">../../builds/JPARC_foil_CN/My Zip File/JPARC_foil_CN.zip</Property>
+				<Property Name="ZipBase" Type="Str">NI_zipbasedefault</Property>
+			</Item>
+		</Item>
 	</Item>
 </Project>
