@@ -1,13 +1,13 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Library LVVersion="17008000">
+<Library LVVersion="20008000">
 	<Property Name="Instrument Driver" Type="Str">True</Property>
 	<Property Name="NI.Lib.DefaultMenu" Type="Str">dir.mnu</Property>
 	<Property Name="NI.Lib.Description" Type="Str">LabVIEW Plug and Play instrument driver for
 
 ADCMT 6240A DC Votage/Current Source Monitor.</Property>
 	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
-	<Property Name="NI.Lib.Icon" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*7!!!*Q(C=\&gt;1R&lt;NN!%)8BZS"&amp;7NUA%(3$K&gt;TL#KL3TR85OF4F@JI=1#=)I#\V.&amp;'2!$,5REWA+]D`$C?"X&amp;B.$#3!33V.P&gt;W&gt;`543F'L\),X8_&gt;KW@X%&lt;`9P&amp;@C^RW+P/2DY/YYT_E9XPCQKHPN&amp;6H_@^.&lt;@SR58`C(`06V??IIPZU`J67M`8P_,8C^N&lt;`VP``^V`:70-X&gt;6"L\R*.S7F*3VI4L0[&gt;?=E4`)E4`)E4`)A$`)A$`)A$X)H&gt;X)H&gt;X)H&gt;X)D.X)D.X)D.`,;S55O=J&amp;T6:,&amp;EY73IEG":$!5*9@%EXA34_,BKR*0YEE]C3@R-%3**`%EHM34?*CGR*.Y%E`C34S5+EH74IYH]6"?A3@Q"*\!%XB95I%H!!3,"97$)D!5&gt;!9HA3@Q""Z/&amp;8A#4_!*0)'(&lt;A7?Q".Y!E`A95J&gt;F3D.W-HR5%;/R`%Y(M@D?#ANR_.Y()`D=4QM*]@D?"S%M["4()+=3=Y!ZYPD=4T]E?.R0)\(]4A?OOI/?6W:I2E\/2\$9XA-D_%R0*31Y4%]BM@Q'"\+SP!9(M.D?!Q03]HQ'"\$9U#-26F?2D&amp;DID()#!Q0HXJ;L/Z3F-2K\X`.[5&amp;60Y$K"UP^Q+A@"05.6N]Y^1V28WDV"62@'0506P]1.6#^M,KA?K"/()_U(7V,W^$7N"6N3:P4:G0K8RZY/JVU0"[VW_WUX7[VW7SU8K_V7KWU8#YVH]]VG]X_P+U_ME`&lt;T?6\[?@NZ]@$DV]0BW_(B[`@PXQ[X.Y`DPS/=;`6JP@3P`"OV$O&gt;,V\T8+-HH0[&amp;TQ!!!!!</Property>
-	<Property Name="NI.Lib.SourceVersion" Type="Int">385908736</Property>
+	<Property Name="NI.Lib.Icon" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*7!!!*Q(C=\&gt;1R&lt;NN!%)8BZS"&amp;7NUA%(3$K&gt;TL#KL3TR85OF4F@JI=1#=)I#\V.&amp;'2!$,5REWA+]D`$C?"X&amp;B.$#3!33V.P&gt;W&gt;`543F'L\),X8_&gt;KW@X%&lt;`9P&amp;@C^RW+P/2DY/YYT_E9XPCQKHPN&amp;6H_@^.&lt;@SR58`C(`06V??IIPZU`J67M`8P_,8C^N&lt;`VP``^V`:70-X&gt;6"L\R*.S7F*3VI4L0[&gt;?=E4`)E4`)E4`)A$`)A$`)A$X)H&gt;X)H&gt;X)H&gt;X)D.X)D.X)D.`,;S55O=J&amp;T6:,&amp;EY73IEG":$!5*9@%EXA34_,BKR*0YEE]C3@R-%3**`%EHM34?*CGR*.Y%E`C34S5+EH74IYH]6"?A3@Q"*\!%XB95I%H!!3,"97$)D!5&gt;!9HA3@Q""Z/&amp;8A#4_!*0)'(&lt;A7?Q".Y!E`A95J&gt;F3D.W-HR5%;/R`%Y(M@D?#ANR_.Y()`D=4QM*]@D?"S%M["4()+=3=Y!ZYPD=4T]E?.R0)\(]4A?OOI/?6W:I2E\/2\$9XA-D_%R0*31Y4%]BM@Q'"\+SP!9(M.D?!Q03]HQ'"\$9U#-26F?2D&amp;DID()#!Q0HXJ;L/Z3F-2K\X`.[5&amp;60Y$K"UP^Q+A@"05.6N]Y^1V28WDV"62@'0506P]1.6#^M,KA?K"/()_U(7V,W^$7N"6N3:P4:G0K8RZY/JVU0"[VW_WUX7[VW7SU8K_V7KWU8#YVH]]VG]X_P+U_ME`&lt;T?6\[?@NZ]@$DV]0BW_(B[`@PXQ[X.Y`DPS/=;`6JP@3P`"OV$O&gt;,V\T8+-HH0[&amp;TQ!!!!!</Property>
+	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">2.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>

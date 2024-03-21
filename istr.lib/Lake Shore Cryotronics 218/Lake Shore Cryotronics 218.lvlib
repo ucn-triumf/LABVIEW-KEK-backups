@@ -1,10 +1,10 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Library LVVersion="17008000">
+<Library LVVersion="20008000">
 	<Property Name="Instrument Driver" Type="Str">True</Property>
 	<Property Name="NI.Lib.Description" Type="Str">Instrument Driver for Lake Shore Cryotronics 218 Temp. Monitor</Property>
 	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
-	<Property Name="NI.Lib.Icon" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)]!!!*Q(C=\&gt;;^41."%)&lt;B\R!"K7-3=%B!-CWY"&lt;=Q,4AF&gt;)D*2G3%&amp;^#!7ZA7X)*&lt;/.\&lt;'VM7#*S!B""XL(__X:V^@(^#;NO6&gt;+HBX+9PN\&amp;`/,Q0^@6E6P7X)6.1_`PZV@`*@.7=Y6DBN(^;&gt;XI@0MY`Z``P`_``O`XH&lt;__(MY._?*-[4&lt;@OE,3A/=WGOTP*ETT*ETT*ETT)ATT)ATT)A^T*H&gt;T*H&gt;T*H&gt;T)D&gt;T)D&gt;T)\@!Y)2?ZS'8N]:)MHCS5&amp;%U+*)/B+(F*0)EH]31?PCLR**\%EXA3$U/5?"*0YEE]C9&gt;J3DS**`%EHM2$K3&lt;*NJ0D34S56_!*0)%H]!1?FF4A#1$"9E(BI!A-":X"B]!4?!)0(R6Y!E`A#4S"BWY&amp;HM!4?!*0Y'&amp;+/SL2././DI=S=DS/R`%Y(M&gt;$;4E?R_.Y()`D94EZ(M@D)*Q&amp;H?)1Z%RS"DB@()`DY5W/R`%Y(M@D?/BK:]D&lt;E2EVYU[/R`!9(M.D?!Q0*72Y$)`B-4S'B\)S0)&lt;(]"A?Q].3-DS'R`!9%'.2FJ&gt;2T*BI$$)#Q].@OVKMH;6I%GN\X:L4B;K[!&amp;58FOK#56U)KB/M/H'K%[)[U+I$K$IQKB_M_C%KI'JB65(61/VZX&gt;'WN*[WJKVI3^K#.K@.RKH@0(#`XWOXWWG\X;LP?[X8;[V7+SW83SU7#]XH=]VGM_04[I:^WLL$=_G"TZPH__\JJO]WN`@&gt;Y]N&gt;^XT^WIXZ4\&lt;JO@1&lt;HIW[/0W(:DR'&lt;S;Z+2M!!!!!</Property>
-	<Property Name="NI.Lib.SourceVersion" Type="Int">385908736</Property>
+	<Property Name="NI.Lib.Icon" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)]!!!*Q(C=\&gt;;^41."%)&lt;B\R!"K7-3=%B!-CWY"&lt;=Q,4AF&gt;)D*2G3%&amp;^#!7ZA7X)*&lt;/.\&lt;'VM7#*S!B""XL(__X:V^@(^#;NO6&gt;+HBX+9PN\&amp;`/,Q0^@6E6P7X)6.1_`PZV@`*@.7=Y6DBN(^;&gt;XI@0MY`Z``P`_``O`XH&lt;__(MY._?*-[4&lt;@OE,3A/=WGOTP*ETT*ETT*ETT)ATT)ATT)A^T*H&gt;T*H&gt;T*H&gt;T)D&gt;T)D&gt;T)\@!Y)2?ZS'8N]:)MHCS5&amp;%U+*)/B+(F*0)EH]31?PCLR**\%EXA3$U/5?"*0YEE]C9&gt;J3DS**`%EHM2$K3&lt;*NJ0D34S56_!*0)%H]!1?FF4A#1$"9E(BI!A-":X"B]!4?!)0(R6Y!E`A#4S"BWY&amp;HM!4?!*0Y'&amp;+/SL2././DI=S=DS/R`%Y(M&gt;$;4E?R_.Y()`D94EZ(M@D)*Q&amp;H?)1Z%RS"DB@()`DY5W/R`%Y(M@D?/BK:]D&lt;E2EVYU[/R`!9(M.D?!Q0*72Y$)`B-4S'B\)S0)&lt;(]"A?Q].3-DS'R`!9%'.2FJ&gt;2T*BI$$)#Q].@OVKMH;6I%GN\X:L4B;K[!&amp;58FOK#56U)KB/M/H'K%[)[U+I$K$IQKB_M_C%KI'JB65(61/VZX&gt;'WN*[WJKVI3^K#.K@.RKH@0(#`XWOXWWG\X;LP?[X8;[V7+SW83SU7#]XH=]VGM_04[I:^WLL$=_G"TZPH__\JJO]WN`@&gt;Y]N&gt;^XT^WIXZ4\&lt;JO@1&lt;HIW[/0W(:DR'&lt;S;Z+2M!!!!!</Property>
+	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">2.0.0.0</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="Public" Type="Folder">

@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="17008000">
+<Project Type="Project" LVVersion="20008000">
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -869,7 +869,7 @@
 		<Item Name="CRYO_MASTER_FULL_RUN3.vi" Type="VI" URL="../CRYO_MASTER_FULL_RUN3.vi"/>
 		<Item Name="CRYO_MASTER_FULL_RUN4_dev.vi" Type="VI" URL="../CRYO_MASTER_FULL_RUN4_dev.vi"/>
 		<Item Name="CRYO_MASTER_FULL_RUN4.vi" Type="VI" URL="../CRYO_MASTER_FULL_RUN4.vi"/>
-		<Item Name="CRYO_MASTER_FULL_RUN4_dev2.vi" Type="VI" URL="../CRYO_MASTER_FULL_RUN4_dev2.vi"/>
+		<Item Name="CRYO_MASTER_FULL_CHF2023.vi" Type="VI" URL="../CRYO_MASTER_FULL_CHF2023.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
@@ -959,6 +959,24 @@
 				<Item Name="Nearest Frequency for Block.vi" Type="VI" URL="/&lt;vilib&gt;/Express/express input/SimulateSignalConfig.llb/Nearest Frequency for Block.vi"/>
 				<Item Name="Nearest Freq in Int Cycles.vi" Type="VI" URL="/&lt;vilib&gt;/Express/express input/SimulateSignalConfig.llb/Nearest Freq in Int Cycles.vi"/>
 				<Item Name="Dynamic To Waveform Array.vi" Type="VI" URL="/&lt;vilib&gt;/Express/express shared/transition.llb/Dynamic To Waveform Array.vi"/>
+				<Item Name="DAQmx Adjust 9262 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9262 Calibration.vi"/>
+				<Item Name="DAQmx Adjust 9628 AI Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9628 AI Calibration.vi"/>
+				<Item Name="DAQmx Adjust 9629 AI Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9629 AI Calibration.vi"/>
+				<Item Name="DAQmx Adjust 9638 AI Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9638 AI Calibration.vi"/>
+				<Item Name="DAQmx Adjust 9628 AO Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9628 AO Calibration.vi"/>
+				<Item Name="DAQmx Adjust 9629 AO Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9629 AO Calibration.vi"/>
+				<Item Name="DAQmx Adjust 9638 AO Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Adjust 9638 AO Calibration.vi"/>
+				<Item Name="DAQmx Get 9262 Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9262 Calibration Adjustment Points.vi"/>
+				<Item Name="DAQmx Get 9628 AI Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9628 AI Calibration Adjustment Points.vi"/>
+				<Item Name="DAQmx Get 9629 AI Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9629 AI Calibration Adjustment Points.vi"/>
+				<Item Name="DAQmx Get 9638 AI Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9638 AI Calibration Adjustment Points.vi"/>
+				<Item Name="DAQmx Get 9628 AO Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9628 AO Calibration Adjustment Points.vi"/>
+				<Item Name="DAQmx Get 9629 AO Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9629 AO Calibration Adjustment Points.vi"/>
+				<Item Name="DAQmx Get 9638 AO Calibration Adjustment Points.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Get 9638 AO Calibration Adjustment Points.vi"/>
+				<Item Name="DAQmx Setup 9262 Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 9262 Calibration.vi"/>
+				<Item Name="DAQmx Setup 9628 AO Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 9628 AO Calibration.vi"/>
+				<Item Name="DAQmx Setup 9629 AO Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 9629 AO Calibration.vi"/>
+				<Item Name="DAQmx Setup 9638 AO Calibration.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/calibration/calibrationInfo.llb/DAQmx Setup 9638 AO Calibration.vi"/>
 			</Item>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
